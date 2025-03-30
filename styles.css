@@ -1,0 +1,139 @@
+.title-gif {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px; /* Adjust the size */
+}
+body {
+	font-family: 'Manrope', sans-serif;
+	margin: 0;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h1 {
+	font-family: 'Manrope', sans-serif;
+	font-size: 30px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h2 {
+	font-family: 'Manrope', sans-serif;
+	font-size: 22px;
+	margin: 0;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h3 {
+	font-family: 'Manrope', sans-serif;
+	font-size: 15px;
+	padding: 20px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* Navbar Styling */
+.navbar {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
+
+/* Link Styling */
+.navbar a {
+	color: black;
+	text-decoration: none;
+	padding: 14px 0px;
+	margin: 0 10px;
+	font-size: 16px;
+}
+
+/* Dropdown Container */
+.dropdown {
+	position: relative; /* Needed for absolute positioning of dropdown content */
+	display: flex;
+}
+
+/* Dropdown Toggle Link */
+.dropdown-toggle {
+	color: black;
+	text-decoration: none;
+	padding: 14px 0;
+	margin: 0 10px;
+	font-size: 10px;
+}
+
+/* Dropdown Content (Initially hidden) */
+.dropdown-content {
+	display: none; /* Hide the dropdown by default */
+	position: absolute;
+	background-color: #fff;
+	min-width: 200px; /* Adjust the width of the dropdown */
+	z-index: 1;
+	top: 100%; /* This ensures the dropdown appears below the "Work" link */
+	left: 0; /* Align the dropdown content to the left of the parent (Work link) */
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Show the dropdown when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Optional: Add hover effect for dropdown links */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.gallery {
+	columns: 3; /* Creates 3 independent columns */
+	column-gap: 20px;
+	max-width: 92vw;
+}
+.gallery-item {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	break-inside: avoid; /* Prevent images from splitting across columns */
+}
+.gallery-item img {
+	width: 100%; /* Make images take full column width */
+	display: block;
+	transition: opacity 0.3s ease;
+}
+.description {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.031);
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Manrope';
+	border-radius: 10px;
+}
+.gallery-item:hover .description {
+	opacity: 1;
+}
+.gallery-item:hover img {
+	opacity: 0.3; /* Dim image when hovered */
+}

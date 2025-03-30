@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Tilda Rose</title>
+	<link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+		.content {
+			display: flex;
+			width: 100vw;
+			height: 100vh; /* Makes it full height */
+		}
+		.text {
+			width: 50%; /* Takes up the right half */
+			padding: 20px;
+			font-size: 17px;
+			line-height: 1.6;
+			text-align: left;
+		}
+		.image {
+			width: 50%; /* Left half for image */
+			display: flex;
+			justify-content: center;
+			align-items:start;
+			padding: 20px;
+		}
+		.image img {
+			max-width: 80%; /* Makes sure the image doesn’t overflow */
+			max-height: 90vh; /* Prevents the image from taking up the whole screen */
+			object-fit: contain;
+		}
+	</style>
+</head>
+<body>
+	<a href="index.html">
+		<img src="assets/gifs/Logo-Transparent-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+	<h2>Hello! My name is Tilda Rose,  I’m a Finnish-American illustrator  based in Helsinki.</h2>
+	<div class="content">
+		<div class="image">
+			<img src="assets/images/Tilda-Berlin-TildaRose.jpg" alt="Example">
+		</div>
+		<div class="text">
+			<p>I was based in Philadelphia for nearly a decade before relocating to Finland in 2021. I graduated from the university of the arts in philadelphia with a bfa in illustration in 2019. </p>
+			<p>My creative process is traditional, I create my works with pencil, gouache and inks. I’ve heard my work described as “unique fusions of color within disciplined compositions” and I think that rings true to my illustrations. </p>
+			<p>My illustrations have been exhibited at the Society of Illustrators (new york city) as well as Bologna Children’s Book Fair Illustrators Exhibition (italy). I was also the Artist-in-Residence at the renowned Moomin Museum (Tampere, Finland) in 2022, where I had the opportunity to honor one of my creative idols Tove Jansson and her lifetime of work.</p>
+			<p><strong>Here’s a few of my clients:</strong></p>
+			<p><em>NPR, WSJ, PLANSPONSOR, PLANADVISER, Chief Investment Officer, Pentagram, UC Merced | Friends of the Web, morning brew, cog design, Curtis Institute of Music, The Progressive, North American Review, Baltimore Magazine, Eater.com, 5280 Magazine, WSOY, Finnish Illustrators Association, The Poetry Foundation, The Finnish Union of Health and Social Care, The Finnish Psychological Association, Notre Dame Magazine, Middlebury Magazine, Are We Europe, Sierra Club</em></p>
+
+
+
+
+		</div>
+	</div>	
+</body>
+</html>
