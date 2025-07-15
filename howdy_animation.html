@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Textile - Tilda Rose</title>
+	<link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+</head>
+<body>
+	<a href="index.html">
+		<img src="/assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+    <script>
+        fetch('/pages/navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+	<h1>howdy animation</h1>
+
+	<script>
+		const images = [
+			{src: "",
+			description: "", link: ""},
+
+			{src: "",
+			description: "", link: ""},
+
+			{src: "",
+			description: "", link: ""},
+
+			{src: "",
+			description: "", link: ""},
+
+			{src: "",
+			description: "", link: ""}
+		];
+	</script>
+	
+
+	<div class="gallery" id="gallery"></div>
+
+	<script>
+		const gallery = document.getElementById("gallery");
+
+		images.forEach(item => {
+			const galleryItem = document.createElement("div");
+			galleryItem.className = "gallery-item";
+
+			const link = document.createElement("a");
+			link.href = item.link || "#"; // fallback to "#" if no link
+
+			const img = document.createElement("img");
+			img.src = item.src;
+			img.alt = item.description || "";
+
+			link.appendChild(img); // wrap image in <a>
+
+			const desc = document.createElement("div");
+			desc.className = "description";
+			desc.textContent = item.description;
+
+			galleryItem.appendChild(link); // append <a> instead of img directly
+			galleryItem.appendChild(desc);
+
+			gallery.appendChild(galleryItem);
+		});
+	</script>
+</body>
+</html>

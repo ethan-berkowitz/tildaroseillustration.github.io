@@ -26,70 +26,96 @@
 	<script>
 		const images = [
 			{src: "assets/featured/CatNap-Animation-Gouache-Small-TildaRose.gif",
-			description: "howdy! animation" },
-			{src: "assets/featured/DickKet-SelfPortrait-ArtHistory-Painting-TildaRose.jpg",
-			description: "dick ket's self-portrait"},
-			{src: "assets/featured/Snake-Painting-Character-Monster-TildaRose.jpg",
-			description: "devil turned into a snake"},
+			description: "howdy! animation", link: "creatures.html"},
+			
 			{src: "assets/fiber_art/Flounder/Flounder-1-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg",
-			description: "flounder"},
+			description: "flounder", link: ""},
+			
+			{src: "assets/featured/DickKet-SelfPortrait-ArtHistory-Painting-TildaRose.jpg",
+			description: "dick ket's self-portrait", link: ""},
+			
 			{src: "assets/featured/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg",
-			description: "finnish union of health and social care"},
-			{src: "assets/featured/Self-Portrait-Pose-Figure-Woman-TildaRose.jpg",
-			description: "pose I"},
+			description: "finnish union of health and social care", link: ""},
+			
+			{src: "assets/featured/Snake-Painting-Character-Monster-TildaRose.jpg",
+			description: "devil turned into a snake", link: ""},
+			
 			{src: "assets/featured/Daphne-Cat-Animation-Gouache-1-Medium-TildaRose.gif",
-			description: "daphne! animation"},
+			description: "daphne! animation", link: ""},
+			
 			{src: "assets/black_and_white/Dancer-Charcoal-Sketch-TildaRose.jpg",
-			description: "charcoal"},
+			description: "charcoal", link: ""},
+			
 			{src: "assets/featured/Tehy-Magazine-Workplace-Aggression-1-TildaRose.jpg",
-			description: "finnish union of health and social care"},
+			description: "finnish union of health and social care", link: ""},
+			
 			{src: "assets/featured/ManAndCat-Painting-Illustration-Sepia-TildaRose.jpg",
-			description: "the encounter"},
+			description: "the encounter", link: ""},
+			
 			{src: "assets/featured/Lapland-Finland-Travel-Snow-Winter-Poster-TildaRose.jpg",
-			description: "lapland poster"},
+			description: "lapland poster", link: ""},
+			
 			{src: "assets/featured/IpiPikku-ChildrensBook-Greenhouse-Night-Plants-Animals-Childrens-Book-Tilda-Rose.jpg",
-			description: "the mouse and the caterpillar"},
+			description: "the mouse and the caterpillar", link: ""},
+			
+			{src: "assets/featured/Self-Portrait-Pose-Figure-Woman-TildaRose.jpg",
+			description: "pose I", link: ""},
+			
 			{src: "assets/featured/Moomin-Museum-Sketchbook-Residency-Cabin-TildaRose.jpg",
-			description: "Moomin Museum x TILDA ROSE"},
+			description: "Moomin Museum x TILDA ROSE", link: ""},
+			
 			{src: "assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Article-Illustration-TildaRose.jpg",
-			description: "finnish psychological association"},
+			description: "finnish psychological association", link: ""},
+			
 			{src: "assets/client/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-2-TildaRose.jpg",
-			description: "finnish illustrators association"},
+			description: "finnish illustrators association", link: ""},
+			
 			{src: "assets/pattern/SummerFloral-TildaRose.jpg",
-			description: "patterns"},
+			description: "patterns", link: ""},
+			
 			{src: "assets/client/Tehy-Magazine-Menopause-1-TildaRose.jpg",
-			description: "finnish union of health and social care"},
+			description: "finnish union of health and social care", link: ""},
+			
 			{src: "assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg",
-			description: "musicians"},
-			{src: "",
-			description: ""},
-			{src: "",
-			description: ""},
-			{src: "",
-			description: ""}
+			description: "musicians", link: ""},
+			
+			{src: "assets/featured/Lola-Whistling-Valley-Map-TildaRose.jpg",
+			description: "the map of whistling valley", link: ""},
+			
+			{src: "assets/people/Hands-Watercolor-Study-Portrait-TildaRose.jpg",
+			description: "study of hands", link: ""},
+			
+			{src: "assets/client/PoetryFoundation-Archaic-Objects-Article-Illustration-TildaRose.jpg",
+			description: "the poetry foundation collection", link: ""}
 		];
 	</script>
+	
 
 	<div class="gallery" id="gallery"></div>
 
 	<script>
 		const gallery = document.getElementById("gallery");
-	
+
 		images.forEach(item => {
 			const galleryItem = document.createElement("div");
 			galleryItem.className = "gallery-item";
-	
+
+			const link = document.createElement("a");
+			link.href = item.link || "#"; // fallback to "#" if no link
+
 			const img = document.createElement("img");
 			img.src = item.src;
 			img.alt = item.description || "";
-	
+
+			link.appendChild(img); // wrap image in <a>
+
 			const desc = document.createElement("div");
 			desc.className = "description";
 			desc.textContent = item.description;
-	
-			galleryItem.appendChild(img);
+
+			galleryItem.appendChild(link); // append <a> instead of img directly
 			galleryItem.appendChild(desc);
-	
+
 			gallery.appendChild(galleryItem);
 		});
 	</script>
