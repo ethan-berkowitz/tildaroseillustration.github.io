@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Textile - Tilda Rose</title>
+	<link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+</head>
+<body>
+	<a href="index.html">
+		<img src="assets/gifs/Logo-Transparent-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+	<h1>creatures</h1>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="assets/images/Textile-Waterfall-1-TildaRose.jpg" alt="">
+            <div class="description"></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/Textile-Summermoss-1-TildaRose.jpg" alt="">
+            <div class="description"></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/Textile-Countryside-1-TildaRose.jpg" alt="">
+            <div class="description"></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/Textile-Flounder-1-TildaRose.jpg" alt="">
+            <div class="description"></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/Textile-Sunshine-1-TildaRose.jpg" alt="">
+            <div class="description"></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/Textile-Autumn-1-TildaRose.jpg" alt="">
+            <div class="description"></div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/Textile-Springmoss-1-TildaRose.jpg" alt="">
+            <div class="description"></div>
+        </div>
+    </div>
+</body>
+</html>

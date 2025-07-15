@@ -23,31 +23,76 @@
 
 	<h1>featured</h1>
 
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="assets/images/Townes-VanZandt-Portrait-TildaRose.jpg" alt="Test">
-            <div class="description">Test</div>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images/TEHY-KiukunKohteena-Aukeama-TildaRose.jpg" alt="Test">
-            <div class="description">Test</div>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images/Snake-Painting-Character-Monster-TildaRose.jpg" alt="Test">
-            <div class="description">Test</div>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images/Terracotta-Roof-Italy-Bologna-TildaRose.jpg" alt="Test">
-            <div class="description">Test</div>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images/Flounder-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg" alt="Test">
-            <div class="description">Test</div>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images/Finnish-Healthcare-Union-Menopause-Women-Health-TildaRose copy.jpg" alt="Test">
-            <div class="description">Test</div>
-        </div>
-    </div>
+	<script>
+		const images = [
+			{src: "assets/featured/CatNap-Animation-Gouache-Small-TildaRose.gif",
+			description: "howdy! animation" },
+			{src: "assets/featured/DickKet-SelfPortrait-ArtHistory-Painting-TildaRose.jpg",
+			description: "dick ket's self-portrait"},
+			{src: "assets/featured/Snake-Painting-Character-Monster-TildaRose.jpg",
+			description: "devil turned into a snake"},
+			{src: "assets/fiber_art/Flounder/Flounder-1-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg",
+			description: "flounder"},
+			{src: "assets/featured/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg",
+			description: "finnish union of health and social care"},
+			{src: "assets/featured/Self-Portrait-Pose-Figure-Woman-TildaRose.jpg",
+			description: "pose I"},
+			{src: "assets/featured/Daphne-Cat-Animation-Gouache-1-Medium-TildaRose.gif",
+			description: "daphne! animation"},
+			{src: "assets/black_and_white/Dancer-Charcoal-Sketch-TildaRose.jpg",
+			description: "charcoal"},
+			{src: "assets/featured/Tehy-Magazine-Workplace-Aggression-1-TildaRose.jpg",
+			description: "finnish union of health and social care"},
+			{src: "assets/featured/ManAndCat-Painting-Illustration-Sepia-TildaRose.jpg",
+			description: "the encounter"},
+			{src: "assets/featured/Lapland-Finland-Travel-Snow-Winter-Poster-TildaRose.jpg",
+			description: "lapland poster"},
+			{src: "assets/featured/IpiPikku-ChildrensBook-Greenhouse-Night-Plants-Animals-Childrens-Book-Tilda-Rose.jpg",
+			description: "the mouse and the caterpillar"},
+			{src: "assets/featured/Moomin-Museum-Sketchbook-Residency-Cabin-TildaRose.jpg",
+			description: "Moomin Museum x TILDA ROSE"},
+			{src: "assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Article-Illustration-TildaRose.jpg",
+			description: "finnish psychological association"},
+			{src: "assets/client/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-2-TildaRose.jpg",
+			description: "finnish illustrators association"},
+			{src: "assets/pattern/SummerFloral-TildaRose.jpg",
+			description: "patterns"},
+			{src: "assets/client/Tehy-Magazine-Menopause-1-TildaRose.jpg",
+			description: "finnish union of health and social care"},
+			{src: "assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg",
+			description: "musicians"},
+			{src: "",
+			description: ""},
+			{src: "",
+			description: ""},
+			{src: "",
+			description: ""}
+		];
+	</script>
+
+	<div class="gallery" id="gallery"></div>
+
+	<script>
+		const gallery = document.getElementById("gallery");
+	
+		images.forEach(item => {
+			const galleryItem = document.createElement("div");
+			galleryItem.className = "gallery-item";
+	
+			const img = document.createElement("img");
+			img.src = item.src;
+			img.alt = item.description || "";
+	
+			const desc = document.createElement("div");
+			desc.className = "description";
+			desc.textContent = item.description;
+	
+			galleryItem.appendChild(img);
+			galleryItem.appendChild(desc);
+	
+			gallery.appendChild(galleryItem);
+		});
+	</script>
+
 </body>
 </html>
