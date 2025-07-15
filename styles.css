@@ -102,6 +102,13 @@ h3 {
 	column-gap: 20px;
 	max-width: 92vw;
 }
+
+.gallery_single_column {
+	columns: 1; /* Creates 3 independent columns */
+	column-gap: 20px;
+	max-width: 92vw;
+}
+
 .gallery-item {
 	position: relative;
 	overflow: hidden;
