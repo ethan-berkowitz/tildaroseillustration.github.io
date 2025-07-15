@@ -26,7 +26,7 @@
 	<script>
 		const images = [
 			{src: "assets/featured/CatNap-Animation-Gouache-Small-TildaRose.gif",
-			description: "howdy! animation", link: "creatures.html"},
+			description: "howdy! animation", link: "/howdy_animation.html"},
 			
 			{src: "assets/fiber_art/Flounder/Flounder-1-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg",
 			description: "flounder", link: ""},
@@ -43,8 +43,6 @@
 			{src: "assets/featured/Daphne-Cat-Animation-Gouache-1-Medium-TildaRose.gif",
 			description: "daphne! animation", link: ""},
 			
-			{src: "assets/black_and_white/Dancer-Charcoal-Sketch-TildaRose.jpg",
-			description: "charcoal", link: ""},
 			
 			{src: "assets/featured/Tehy-Magazine-Workplace-Aggression-1-TildaRose.jpg",
 			description: "finnish union of health and social care", link: ""},
@@ -52,9 +50,13 @@
 			{src: "assets/featured/ManAndCat-Painting-Illustration-Sepia-TildaRose.jpg",
 			description: "the encounter", link: ""},
 			
+			
 			{src: "assets/featured/Lapland-Finland-Travel-Snow-Winter-Poster-TildaRose.jpg",
 			description: "lapland poster", link: ""},
 			
+			{src: "assets/black_and_white/Dancer-Charcoal-Sketch-TildaRose.jpg",
+			description: "charcoal", link: ""},
+
 			{src: "assets/featured/IpiPikku-ChildrensBook-Greenhouse-Night-Plants-Animals-Childrens-Book-Tilda-Rose.jpg",
 			description: "the mouse and the caterpillar", link: ""},
 			
@@ -99,7 +101,7 @@
 		images.forEach(item => {
 			const galleryItem = document.createElement("div");
 			galleryItem.className = "gallery-item";
-
+			
 			const link = document.createElement("a");
 			link.href = item.link || "#"; // fallback to "#" if no link
 
