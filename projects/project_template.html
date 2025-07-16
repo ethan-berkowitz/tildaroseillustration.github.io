@@ -24,20 +24,16 @@
 
 	<script>
 		const images = [
-			{src: "",
-			description: "", link: ""},
-
-			{src: "",
-			description: "", link: ""},
-
-			{src: "",
-			description: "", link: ""},
-
-			{src: "",
-			description: "", link: ""},
-
-			{src: "",
-			description: "", link: ""}
+			{src: ""},
+			{src: ""},
+			{src: ""},
+			{src: ""},
+			{src: ""},
+			{src: ""},
+			{src: ""},
+			{src: ""},
+			{src: ""},
+			{src: ""}
 		];
 	</script>
 	
@@ -49,10 +45,9 @@
 
 		images.forEach(item => {
 			const galleryItem = document.createElement("div");
-			galleryItem.className = "gallery-item";
+			galleryItem.className = "gallery-item-single-column";
 
 			const link = document.createElement("a");
-			link.href = item.link || "#"; // fallback to "#" if no link
 
 			const img = document.createElement("img");
 			img.src = item.src;

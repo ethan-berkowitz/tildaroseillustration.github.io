@@ -122,6 +122,10 @@ h3 {
 	display: block;
 	transition: opacity 0.3s ease;
 }
+.gallery-item-single-column img {
+	width: 100%; /* Make images take full column width */
+	display: block;
+}
 .description {
 	position: absolute;
 	top: 0;
