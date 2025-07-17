@@ -125,6 +125,7 @@ h3 {
 .gallery-item-single-column img {
 	width: 100%; /* Make images take full column width */
 	display: block;
+	margin-bottom: 20px;
 }
 .description {
 	position: absolute;
