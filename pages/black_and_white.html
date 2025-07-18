@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>b&w - Tilda Rose</title>
+	<link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+</head>
+<body>
+	<a href="/index.html">
+		<img src="/assets/branding/Logo/Logo-Transparent-TildaRose.png" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+    <script>
+        fetch('/navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+	<h1>b&w</h1>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" alt="">
+	</div>
+
+	<script>
+		const images = [
+			{src: "/assets/black_and_white/Diver-Swimmer-Charcoal-Sketch-TildaRose.jpg"},
+			{src: "/assets/black_and_white/Flower-Sketch-Charcoal-TildaRose.jpg"},
+			{src: "/assets/black_and_white/Coral-3-Charcoal-Sketch-Vignette-TildaRose.jpg"},
+			{src: "/assets/black_and_white/Vase-Sketchbook-BlackAndWhite-Pencil-Drawing-TildaRose.jpg"},
+			{src: "/assets/black_and_white/SelfPortrait-Death-Skeleton-Pencil-BlackAndWhite-TildaRose.jpg"},
+			{src: "/assets/black_and_white/Toad-Charcoal-Sketch-BlackAndWhite-Amphibian-TildaRose.jpg"},
+			{src: "/assets/black_and_white/Dancer-Charcoal-Sketch-TildaRose.jpg"},
+			{src: "/assets/black_and_white/Marks-1-Charcoal-Sketchbook-TildaRose.jpg"},
+			{src: "/assets/black_and_white/Pattern-1-Abstract-Ink-TildaRose.jpg"},
+			{src: "/assets/black_and_white/Pattern-2-Waves-Ink-TildaRose.jpg"},
+			{src: "/assets/black_and_white/Pike-Charcoal-Sketch-Baltic-Sea-TildaRose.jpg"},
+			{src: "/assets/black_and_white/CogDesign-Baroque-Concert-Sketch-2-TildaRose.jpg"},
+			{src: "/assets/black_and_white/Coral-2-Charcoal-Sketch-Vignette-TildaRose.jpg"},
+			{src: "/assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg"},
+			{src: "/assets/people/PLANSPONSOR-Sketch-3-Marble-Sculptor-TildaRose.jpg"}
+		];
+	</script>
+	
+
+	<div class="gallery" id="gallery"></div>
+
+	<script>
+		const modal = document.getElementById("myModal");
+		const modalImg = modal.querySelector("img");
+		const closeBtn = modal.querySelector(".close");
+
+		const gallery = document.getElementById("gallery");
+
+		// Loop through each image
+		images.forEach(item => {
+			const galleryItem = document.createElement("div");
+			galleryItem.className = "gallery-item";
+
+			const img = document.createElement("img");
+			img.src = item.src;
+			img.alt = item.description || "";
+
+			const desc = document.createElement("div");
+			desc.className = "description";
+			desc.textContent = item.description;
+
+			// Handle link behavior
+			if (item.link) {
+				const link = document.createElement("a");
+				link.href = item.link;
+				link.appendChild(img);
+				galleryItem.appendChild(link);
+			} 
+			// Handle modal behavior
+			else {
+				img.style.cursor = "pointer";
+				img.addEventListener("click", () => {
+					modal.style.display = "block";
+					modalImg.src = item.src;
+					modalImg.alt = item.description || "";
+				});
+				galleryItem.appendChild(img);
+			}
+
+			galleryItem.appendChild(desc);
+			gallery.appendChild(galleryItem);
+		});
+
+		// Close modal on X or click outside
+		closeBtn.onclick = () => {
+			modal.style.display = "none";
+		};
+		window.onclick = (e) => {
+			if (e.target == modal) {
+				modal.style.display = "none";
+			}
+		};
+	</script>
+</body>
+</html>
