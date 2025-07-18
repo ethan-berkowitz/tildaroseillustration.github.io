@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>patterns - Tilda Rose</title>
+	<link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+</head>
+<body>
+	<a href="/index.html">
+		<img src="/assets/branding/Logo/Logo-Transparent-TildaRose.png" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+    <script>
+        fetch('/navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+	<h1>surface designs</h1>
+	<h3>non-repeating surface pattern designs</h3>
+
+	<script>
+		const images = [
+			{src: "/assets/pattern/SummerFloral-TildaRose.jpg"},
+			{src: "/assets/pattern/Abstract-Flower-Warm-2-TildaRose.jpg"},
+			{src: "/assets/pattern/Cat-Pattern-TildaRose.jpg"},
+			{src: "/assets/pattern/Floral-Geometric-Red-Green-Yellow-TildaRose.jpg"},
+			{src: "/assets/pattern/Fish-Pike-Green-1-TildaRose.jpg"},
+			{src: "/assets/pattern/Sheep-Shapes-TildaRose.jpg"},
+			{src: ""},
+			{src: ""},
+			{src: ""},
+			{src: ""}
+		];
+	</script>
+	
+
+	<div class="gallery_single_column" id="gallery_single_column"></div>
+
+	<script>
+		const gallery = document.getElementById("gallery_single_column");
+
+		images.forEach(item => {
+			const galleryItem = document.createElement("div");
+			galleryItem.className = "gallery-item-single-column";
+
+			const link = document.createElement("a");
+
+			const img = document.createElement("img");
+			img.src = item.src;
+			img.alt = item.description || "";
+
+			link.appendChild(img); // wrap image in <a>
+
+			const desc = document.createElement("div");
+			desc.className = "description";
+			desc.textContent = item.description;
+
+			galleryItem.appendChild(link); // append <a> instead of img directly
+			galleryItem.appendChild(desc);
+
+			gallery.appendChild(galleryItem);
+		});
+	</script>
+</body>
+</html>
