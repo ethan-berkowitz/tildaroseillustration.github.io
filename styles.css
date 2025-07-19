@@ -34,7 +34,6 @@ h3 {
 	font-family: 'Poppins';
 	font-weight: 100;
 	font-size: 15px;
-	padding: 5px;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -108,10 +107,10 @@ h3 {
 	max-width: 92vw;
 }
 
-.gallery_single_column {
-	columns: 1; /* Creates 3 independent columns */
+.gallery_project {
+	columns: 1;
 	column-gap: 20px;
-	max-width: 92vw;
+	max-width: 40vw;
 }
 
 .gallery-item {
@@ -127,10 +126,10 @@ h3 {
 	display: block;
 	transition: opacity 0.3s ease;
 }
-.gallery-item-single-column img {
+.gallery-item-projects img {
 	width: 100%; /* Make images take full column width */
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 .description {
 	position: absolute;
@@ -187,5 +186,13 @@ h3 {
 	font-size: 40px;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+.spacer-lg {
+	height: 1.5rem;
+}
+
+.spacer-lg-after-text {
+	height: 3rem;
 }
 

@@ -20,9 +20,12 @@
         .then(data => document.getElementById('navbar').innerHTML = data);
     </script>
 
-	<h1>“getting help for menopause”</h1>
-	<h3>a series commissioned by the finnish union of health and social care about the remedies for easing the difficult symptoms during menopause.</h3>
+	<h1>the finnish union of health and social care</h1>
 	<h3>ad: pia hietamäki</h3>
+	<div class="spacer-lg" aria-hidden="true"></div>
+	<h3>a series commissioned by the finnish union of health and social care</h3>
+	<h3>about the remedies for easing the difficult symptoms during menopause.</h3>
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 
 	<script>
 		const images = [
@@ -40,14 +43,14 @@
 	</script>
 	
 
-	<div class="gallery_single_column" id="gallery_single_column"></div>
+	<div class="gallery_project" id="gallery_project"></div>
 
 	<script>
-		const gallery = document.getElementById("gallery_single_column");
+		const gallery = document.getElementById("gallery_project");
 
 		images.forEach(item => {
 			const galleryItem = document.createElement("div");
-			galleryItem.className = "gallery-item-single-column";
+			galleryItem.className = "gallery-item-projects";
 
 			const link = document.createElement("a");
 

@@ -21,7 +21,8 @@
     </script>
 
 	<h1>the mouse and the caterpillar</h1>
-	<h3>who could not agree how to spend time together. personal work.</h3>
+	<h3>...who could not agree how to spend time together. personal work.</h3>
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 
 	<script>
 		const images = [
@@ -33,14 +34,14 @@
 	</script>
 	
 
-	<div class="gallery_single_column" id="gallery_single_column"></div>
+	<div class="gallery_project" id="gallery_project"></div>
 
 	<script>
-		const gallery = document.getElementById("gallery_single_column");
+		const gallery = document.getElementById("gallery_project");
 
 		images.forEach(item => {
 			const galleryItem = document.createElement("div");
-			galleryItem.className = "gallery-item-single-column";
+			galleryItem.className = "gallery-item-projects";
 
 			const link = document.createElement("a");
 

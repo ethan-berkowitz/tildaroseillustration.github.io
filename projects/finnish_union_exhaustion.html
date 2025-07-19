@@ -22,7 +22,9 @@
 
 	<h1>the finnish union of health and social care</h1>
 	<h3>ad: pia hietamies</h3>
+	<div class="spacer-lg" aria-hidden="true"></div>
 	<h3>“hope for people with work exhaustion” by Ulla ojala</h3>
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 
 	<script>
 		const images = [
@@ -32,14 +34,14 @@
 	</script>
 	
 
-	<div class="gallery_single_column" id="gallery_single_column"></div>
+	<div class="gallery_project" id="gallery_project"></div>
 
 	<script>
-		const gallery = document.getElementById("gallery_single_column");
+		const gallery = document.getElementById("gallery_project");
 
 		images.forEach(item => {
 			const galleryItem = document.createElement("div");
-			galleryItem.className = "gallery-item-single-column";
+			galleryItem.className = "gallery-item-projects";
 
 			const link = document.createElement("a");
 
