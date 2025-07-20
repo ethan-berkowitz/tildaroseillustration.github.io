@@ -107,6 +107,18 @@ h3 {
 	max-width: 92vw;
 }
 
+.gallery_social_media {
+	columns: 5; /* Creates 3 independent columns */
+	max-width: 15vw;
+}
+
+.social_media_image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
 .gallery_project {
 	columns: 1;
 	column-gap: 20px;
