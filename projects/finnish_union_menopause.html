@@ -30,15 +30,7 @@
 	<script>
 		const images = [
 			{src: "/assets/client/Tehy-Magazine-Menopause-1-TildaRose.jpg"},
-			{src: "/assets/client/Tehy-Magazine-Menopause-2-TildaRose.jpg"},
-			{src: ""},
-			{src: ""},
-			{src: ""},
-			{src: ""},
-			{src: ""},
-			{src: ""},
-			{src: ""},
-			{src: ""}
+			{src: "/assets/client/Tehy-Magazine-Menopause-2-TildaRose.jpg"}
 		];
 	</script>
 	
@@ -70,5 +62,13 @@
 			gallery.appendChild(galleryItem);
 		});
 	</script>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
 </body>
 </html>

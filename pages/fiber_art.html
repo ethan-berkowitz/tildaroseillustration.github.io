@@ -55,5 +55,13 @@
             <div class="description">spring moss⚪</div>
         </div>
     </div>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
 </body>
 </html>

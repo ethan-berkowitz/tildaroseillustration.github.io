@@ -26,15 +26,7 @@
 	<script>
 		const images = [
 			{src: "/assets/animations/Cat Nap/CatNap-Animation-Gouache-Large-TildaRose.gif"},
-			{src: "/assets/animations/Cat Nap/Process/CatNap-Animation-Process-1-TildaRose.jpg"},
-			{src: ""},
-			{src: ""},
-			{src: ""},
-			{src: ""},
-			{src: ""},
-			{src: ""},
-			{src: ""},
-			{src: ""}
+			{src: "/assets/animations/Cat Nap/Process/CatNap-Animation-Process-1-TildaRose.jpg"}
 		];
 	</script>
 	
@@ -66,5 +58,13 @@
 			gallery.appendChild(galleryItem);
 		});
 	</script>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
 </body>
 </html>

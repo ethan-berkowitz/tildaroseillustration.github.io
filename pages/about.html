@@ -56,11 +56,15 @@
 			<p>My illustrations have been exhibited at the Society of Illustrators (new york city) as well as Bologna Children’s Book Fair Illustrators Exhibition (italy). I was also the Artist-in-Residence at the renowned Moomin Museum (Tampere, Finland) in 2022, where I had the opportunity to honor one of my creative idols Tove Jansson and her lifetime of work.</p>
 			<p><strong>Here’s a few of my clients:</strong></p>
 			<p><em>NPR, WSJ, PLANSPONSOR, PLANADVISER, Chief Investment Officer, Pentagram, UC Merced | Friends of the Web, morning brew, cog design, Curtis Institute of Music, The Progressive, North American Review, Baltimore Magazine, Eater.com, 5280 Magazine, WSOY, Finnish Illustrators Association, The Poetry Foundation, The Finnish Union of Health and Social Care, The Finnish Psychological Association, Notre Dame Magazine, Middlebury Magazine, Are We Europe, Sierra Club</em></p>
-
-
-
-
 		</div>
-	</div>	
+	</div>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
 </body>
 </html>
