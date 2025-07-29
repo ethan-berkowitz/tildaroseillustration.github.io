@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moomin Museum x Finnish Illustrators Association - Tilda Rose</title>
+	<link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+</head>
+<body>
+	<a href="/index.html">
+		<img src="/assets/branding/Logo/Logo-Transparent-TildaRose.png" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+    <script>
+        fetch('/navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+	<h1>Moomin Museum x Finnish Illustrators Association</h1>
+	<h3>In November 2022, i was invited to be the artist-in-residence at the moomin museum (tampere, finland). I spent the month of november hosting world-building workshops, taking part in creative events for children, living in a little red cabin and filling one moleskine sketchbook full of inspiration and experience from the museum.</h3>
+	
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+
+	<iframe width="700" height=400"
+		src="https://www.youtube.com/embed/r4tYm9AXzmI"
+		frameborder="0"
+		allowfullscreen>
+	</iframe>
+
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+
+	<h3>here are a few of my favorite moments from the finished workshop mural. </h3>
+
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+
+	<div class="image">
+		<img src="" alt="Example">
+	</div>
+
+	<script>
+		const images = [
+			{src: "/"},
+			{src: "/"},
+			{src: "/"},
+			{src: "/"},
+			{src: "/"},
+			{src: "/"},
+			{src: "/"},
+			{src: "/"},
+			{src: "/"},
+			{src: "/"}
+		];
+	</script>
+	
+
+	<div class="gallery_project" id="gallery_project"></div>
+
+	<script>
+		const gallery = document.getElementById("gallery_project");
+
+		images.forEach(item => {
+			const galleryItem = document.createElement("div");
+			galleryItem.className = "gallery-item-projects";
+
+			const link = document.createElement("a");
+
+			const img = document.createElement("img");
+			img.src = item.src;
+			img.alt = item.description || "";
+
+			link.appendChild(img); // wrap image in <a>
+
+			const desc = document.createElement("div");
+			desc.className = "description";
+			desc.textContent = item.description;
+
+			galleryItem.appendChild(link); // append <a> instead of img directly
+			galleryItem.appendChild(desc);
+
+			gallery.appendChild(galleryItem);
+		});
+	</script>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
+</body>
+</html>
