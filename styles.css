@@ -126,6 +126,29 @@ h3 {
 	max-width: 40vw;
 }
 
+.gallery_assistants {
+	columns: 2;
+	column-gap: 20px;
+	max-width: 50vw;
+}
+
+.assistant-item img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.caption {
+	text-align: center;
+	margin-top: 8px;
+}
+
+.content {
+	flex-direction: row;
+	max-height: 60vw;
+}
+
+
 .gallery-item {
 	position: relative;
 	overflow: hidden;
@@ -139,6 +162,7 @@ h3 {
 	display: block;
 	transition: opacity 0.3s ease;
 }
+
 .moomin-item img {
 	width: 80%;        /* Image takes 60% of its container width */
 	display: block;    /* Allows margin auto to work */
