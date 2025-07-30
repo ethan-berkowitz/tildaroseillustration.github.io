@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DAPHNE - Tilda Rose</title>
+	<link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+</head>
+<body>
+	<a href="/index.html">
+		<img src="/assets/branding/Logo/Logo-Transparent-TildaRose.png" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+    <script>
+        fetch('/navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+	<h1>DAPHNE</h1>
+	<h3>stop-motion animation painted by hand. </h3>
+	<div class="spacer-lg" aria-hidden="true"></div>
+
+	<script>
+		const images = [
+			{src: "/assets/featured/Daphne-Cat-Animation-Gouache-1-Medium-TildaRose.gif"},
+			{src: "/assets/animations/Daphne/Process/Daphne-Cat-Animation-Process-Stills-1-TildaRose.jpg"},
+			{src: "/assets/animations/Daphne/Process/Daphne-Cat-Animation-Process-Stills-2-TildaRose.jpg"},
+			{src: "/assets/animations/Daphne/Process/Daphne-Cat-Animation-Process-Stills-3-TildaRose.jpg"},
+			{src: "/assets/animations/Daphne/Process/Daphne-Cat-Animation-Process-Stills-4-TildaRose.jpg"},
+			{src: "/assets/animations/Daphne/Process/Daphne-Cat-Animation-Process-Stills-5-TildaRose.jpg"}
+		];
+	</script>
+	
+
+	<div class="gallery_project" id="gallery_project"></div>
+
+	<script>
+		const gallery = document.getElementById("gallery_project");
+
+		images.forEach(item => {
+			const galleryItem = document.createElement("div");
+			galleryItem.className = "gallery-item-projects";
+
+			const link = document.createElement("a");
+
+			const img = document.createElement("img");
+			img.src = item.src;
+			img.alt = item.description || "";
+
+			link.appendChild(img); // wrap image in <a>
+
+			const desc = document.createElement("div");
+			desc.className = "description";
+			desc.textContent = item.description;
+
+			galleryItem.appendChild(link); // append <a> instead of img directly
+			galleryItem.appendChild(desc);
+
+			gallery.appendChild(galleryItem);
+		});
+	</script>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
+</body>
+</html>

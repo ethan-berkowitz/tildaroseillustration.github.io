@@ -140,9 +140,16 @@ h3 {
 	transition: opacity 0.3s ease;
 }
 .moomin-item img {
-	width: 100%; /* Make images take full column width */
-	display: block;
+	width: 80%;        /* Image takes 60% of its container width */
+	display: block;    /* Allows margin auto to work */
+	margin: 0 auto;    /* Centers the image horizontally */
 }
+.single_project_item img {
+	width: 60%;        /* Image takes 60% of its container width */
+	display: block;    /* Allows margin auto to work */
+	margin: 0 auto;    /* Centers the image horizontally */
+}
+
 .gallery-item-projects img {
 	width: 100%; /* Make images take full column width */
 	display: block;
