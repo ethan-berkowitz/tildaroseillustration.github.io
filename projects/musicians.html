@@ -23,6 +23,42 @@
 	<h1>musicians</h1>
 	<div class="spacer-lg" aria-hidden="true"></div>
 
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<h3>nick cave</h3>
+	<div class="spacer-lg" aria-hidden="true"></div>
+	<div class="moomin-item">
+		<img src="/assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg">
+	</div>
+
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<h3>Townes Van Zandt</h3>
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<div class="moomin-item">
+		<img src="/assets/people/Townes-VanZandt-Portrait-Gouache-Painting-TildaRose.jpg">
+	</div>
+
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<h3>Billie Holiday</h3>
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<div class="moomin-item">
+		<img src="/assets/people/Billie-Holiday-Painting-Musician-Portrait-TildaRose.jpg">
+	</div>
+
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<h3>The Rehearsal</h3>
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<div class="moomin-item">
+		<img src="/assets/people/Rehearsal-Performance-Music-Piano-Keyboard-Drums-TildaRose.jpg">
+	</div>
+
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<h3>Justin Townes Earle</h3>
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<div class="moomin-item">
+		<img src="/assets/people/Justin-Townes-Earle-Portrait-TildaRose.jpg">
+	</div>
+
+
 	<script>
 		const images = [
 			{src: "/assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg"},
@@ -35,32 +71,6 @@
 	
 
 	<div class="gallery_project" id="gallery_project"></div>
-
-	<script>
-		const gallery = document.getElementById("gallery_project");
-
-		images.forEach(item => {
-			const galleryItem = document.createElement("div");
-			galleryItem.className = "gallery-item-projects";
-
-			const link = document.createElement("a");
-
-			const img = document.createElement("img");
-			img.src = item.src;
-			img.alt = item.description || "";
-
-			link.appendChild(img); // wrap image in <a>
-
-			const desc = document.createElement("div");
-			desc.className = "description";
-			desc.textContent = item.description;
-
-			galleryItem.appendChild(link); // append <a> instead of img directly
-			galleryItem.appendChild(desc);
-
-			gallery.appendChild(galleryItem);
-		});
-	</script>
 
 	<div id="social_media"></div>
 	<script>
