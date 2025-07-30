@@ -126,6 +126,12 @@ h3 {
 	max-width: 40vw;
 }
 
+.gallery_textiles {
+	columns: 2;
+	column-gap: 20px;
+	max-width: 100vw;
+}
+
 .gallery_assistants {
 	columns: 2;
 	column-gap: 20px;
@@ -147,7 +153,6 @@ h3 {
 	flex-direction: row;
 	max-height: 60vw;
 }
-
 
 .gallery-item {
 	position: relative;
@@ -171,13 +176,18 @@ h3 {
 .single_project_item img {
 	width: 60%;        /* Image takes 60% of its container width */
 	display: block;    /* Allows margin auto to work */
-	margin: 0 auto;    /* Centers the image horizontally */
+	margin: 0 auto 2rem auto;
 }
 
 .gallery-item-projects img {
 	width: 100%; /* Make images take full column width */
 	display: block;
 	margin-bottom: 50px;
+}
+.gallery-item-textiles img {
+	width: 100%; /* Make images take full column width */
+	display: block;
+	margin-bottom: 20px;
 }
 .description {
 	position: absolute;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>flounder - Tilda Rose</title>
+    <title>Sunshine Weaving - Tilda Rose</title>
 	<link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -20,34 +20,32 @@
         .then(data => document.getElementById('navbar').innerHTML = data);
     </script>
 
-	<h1>stuffed wall flounder</h1>
-
-	<h3>Made with recycled textiles and scrap yarns. 55 x 40 cm. not for sale.</h3>
+	<h1>Sunshine Weaving</h1>
+	<h3>Made with recycled textiles and scrap yarns. 92 x 40 cm. available for purchase.</h3>
 	<div class="spacer-lg-after-text" aria-hidden="true"></div>
-
 
 	<script>
 		const images = [
-			{src: "/assets/fiber_art/Flounder/Flounder-1-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
-			{src: "/assets/fiber_art/Flounder/Flounder-2-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
-			{src: "/assets/fiber_art/Flounder/Flounder-3-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
-			{src: "/assets/fiber_art/Flounder/Flounder-4-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
-			{src: "/assets/fiber_art/Flounder/Flounder-5-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
-			{src: "/assets/fiber_art/Flounder/Flounder-6-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
-			{src: "/assets/fiber_art/Flounder/Flounder-7-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
-			{src: "/assets/fiber_art/Flounder/Flounder-8-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"}
+			{src: "/assets/fiber_art/Sunshine/Sunshine-1-Wall-Weaving-Hanging-Textile-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Sunshine/Sunshine-2-Wall-Weaving-Hanging-Textile-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Sunshine/Sunshine-3-Wall-Weaving-Hanging-Textile-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Sunshine/Sunshine-4-Wall-Weaving-Hanging-Textile-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Sunshine/Sunshine-5-Wall-Weaving-Hanging-Textile-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Sunshine/Sunshine-6-Wall-Weaving-Hanging-Textile-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Sunshine/Sunshine-7-Wall-Weaving-Hanging-Textile-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Sunshine/Sunshine-8-Wall-Weaving-Hanging-Textile-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Sunshine/Sunshine-9-Wall-Weaving-Hanging-Textile-TildaRose.jpg"}
 		];
 	</script>
 	
-
-	<div class="gallery_project" id="gallery_project"></div>
+	<div class="gallery_textiles" id="gallery_textiles"></div>
 
 	<script>
-		const gallery = document.getElementById("gallery_project");
+		const gallery = document.getElementById("gallery_textiles");
 
 		images.forEach(item => {
 			const galleryItem = document.createElement("div");
-			galleryItem.className = "gallery-item-projects";
+			galleryItem.className = "gallery-item-textiles";
 
 			const link = document.createElement("a");
 

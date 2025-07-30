@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>stuffed wall flounder - Tilda Rose</title>
+	<link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+</head>
+<body>
+	<a href="/index.html">
+		<img src="/assets/branding/Logo/Logo-Transparent-TildaRose.png" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+    <script>
+        fetch('/navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+	<h1>stuffed wall flounder</h1>
+	<h3>Made with recycled textiles and scrap yarns. 55 x 40 cm. nfs.</h3>
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+
+	<script>
+		const images = [
+			{src: "/assets/fiber_art/Flounder/Flounder-1-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Flounder/Flounder-2-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Flounder/Flounder-3-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Flounder/Flounder-4-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Flounder/Flounder-5-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Flounder/Flounder-6-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Flounder/Flounder-7-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
+			{src: "/assets/fiber_art/Flounder/Flounder-8-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg"},
+		];
+	</script>
+	
+	<div class="gallery_textiles" id="gallery_textiles"></div>
+
+	<script>
+		const gallery = document.getElementById("gallery_textiles");
+
+		images.forEach(item => {
+			const galleryItem = document.createElement("div");
+			galleryItem.className = "gallery-item-textiles";
+
+			const link = document.createElement("a");
+
+			const img = document.createElement("img");
+			img.src = item.src;
+			img.alt = item.description || "";
+
+			link.appendChild(img); // wrap image in <a>
+
+			const desc = document.createElement("div");
+			desc.className = "description";
+			desc.textContent = item.description;
+
+			galleryItem.appendChild(link); // append <a> instead of img directly
+			galleryItem.appendChild(desc);
+
+			gallery.appendChild(galleryItem);
+		});
+	</script>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
+</body>
+</html>
