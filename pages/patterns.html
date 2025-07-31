@@ -8,17 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style></style>
+	<script src="/navbar.js"></script>
 </head>
 <body>
 	<a href="/index.html">
 		<img src="/assets/branding/Logo/Logo-Transparent-TildaRose.png" alt="Tilda Rose" class="title-gif">
 	</a>
 	<div id="navbar"></div>
-    <script>
-        fetch('/navbar.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('navbar').innerHTML = data);
-    </script>
 
 	<h1>patterns</h1>
 	<div class="spacer-lg" aria-hidden="true"></div>

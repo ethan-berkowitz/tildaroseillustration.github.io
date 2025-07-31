@@ -33,17 +33,13 @@
 			object-fit: contain;
 		}
 	</style>
+	<script src="/navbar.js"></script>
 </head>
 <body>
 	<a href="/index.html">
 		<img src="/assets/branding/Logo/Logo-Transparent-TildaRose.png" alt="Tilda Rose" class="title-gif">
 	</a>
 	<div id="navbar"></div>
-    <script>
-        fetch('/navbar.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('navbar').innerHTML = data);
-    </script>
 
 	<h2>Hello! My name is Tilda Rose,  I’m a Finnish-American illustrator  based in Helsinki.</h2>
 	<div class="content">
