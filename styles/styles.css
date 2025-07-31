@@ -1,8 +1,9 @@
 .title-gif {
     display: block;
     margin: 0 auto;
-    max-width: 400px; /* Adjust the size */
+    height: 80px;
 }
+
 body {
 	font-family: 'Manrope', sans-serif;
 	margin: 0;
@@ -11,6 +12,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
+
 /* General Text */
 h1 {
 	font-family: 'Manrope';
@@ -22,6 +24,7 @@ h1 {
 	flex-direction: column;
 	align-items: center;
 }
+
 h2 {
 	font-family: 'Manrope';
 	font-size: 22px;
@@ -31,6 +34,7 @@ h2 {
 	flex-direction: column;
 	align-items: center;
 }
+
 h3 {
 	font-family: 'Poppins';
 	font-weight: 100;
@@ -81,7 +85,9 @@ h4 a:visited {
 	letter-spacing: 3px;
 	justify-content: center;
 	padding: 10px 0;
+	height: 70px;
 }
+
 .navbar a {
 	color: black;
 	text-decoration: none;
@@ -89,6 +95,7 @@ h4 a:visited {
 	margin: 0 10px;
 	font-size: 16px;
 }
+
 .navbar .active {
 	text-decoration: underline;
 }
@@ -223,11 +230,13 @@ h4 a:visited {
 	display: block;
 	margin-bottom: 50px;
 }
+
 .gallery-item-textiles img {
 	width: 100%; /* Make images take full column width */
 	display: block;
 	margin-bottom: 20px;
 }
+
 .description {
 	position: absolute;
 	top: 0;
@@ -251,6 +260,7 @@ h4 a:visited {
 .gallery-item:hover .description {
 	opacity: 1;
 }
+
 .gallery-item:hover img {
 	opacity: 0.3; /* Dim image when hovered */
 }
