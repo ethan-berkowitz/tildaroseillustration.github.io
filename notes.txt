@@ -1,6 +1,0 @@
--set height for navbar and title so they don't "jump around" when page is loading
-
--can call all set elements (title, navbar, social media) in one script, but you need to
-be sure to use fetch priority to make sure the elements that are higher on the page load BEFORE
-the ones at the bottom because the user will SEE if they aren't loaded immediately
-
