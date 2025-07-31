@@ -15,15 +15,15 @@ function highlightActiveSection() {
 		"/": "featured",
 
 		// Work pages
-		"/pages/creatures.html": "work",
-		"/pages/people.html": "work",
-		"/pages/nature.html": "work",
-		"/pages/black_and_white.html": "work",
-		"/pages/client.html": "work",
+		"/work/creatures.html": "work",
+		"/work/people.html": "work",
+		"/work/nature.html": "work",
+		"/work/black_and_white.html": "work",
+		"/work/client.html": "work",
 
 		// Textile pages
-		"/pages/fiber_art.html": "textile",
-		"/pages/patterns.html": "textile",
+		"/textile/fiber_art.html": "textile",
+		"/textile/patterns.html": "textile",
 		"/projects/fiber_art_autumn.html": "textile",
 		"/projects/fiber_art_countryside.html": "textile",
 		"/projects/fiber_art_flounder.html": "textile",
@@ -34,8 +34,8 @@ function highlightActiveSection() {
 		"/projects/fiber_art_wave.html": "textile",
 
 		// About pages
-		"/pages/about.html": "about",
-		"/pages/contact.html": "about"
+		"/about/bio.html": "about",
+		"/about/contact.html": "about"
 	};
 
 	// Fallback to "work" if no match found

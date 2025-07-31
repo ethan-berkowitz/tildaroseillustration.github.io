@@ -248,7 +248,6 @@ h4 a:visited {
 	pointer-events: none; /* <-- This fixes the link click issue */
 }
 
-
 .gallery-item:hover .description {
 	opacity: 1;
 }
