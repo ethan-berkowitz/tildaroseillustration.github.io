@@ -168,15 +168,19 @@ h4 a:visited {
 }
 
 .gallery_assistants {
-	columns: 2;
-	column-gap: 20px;
-	max-width: 50vw;
+  columns: 2;
+  column-gap: 20px;
+  max-width: 50vw;
+}
+
+.assistant-item {
+  text-align: center; /* added to center text */
 }
 
 .assistant-item img {
-	width: 100%;
-	display: block;
-	margin: 0 auto;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .caption {
