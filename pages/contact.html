@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Tilda Rose</title>
+	<link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+		.content {
+			display: flex;
+			width: 100vw;
+			height: 100vh; /* Makes it full height */
+		}
+		.text {
+			width: 50%; /* Takes up the right half */
+			padding: 20px;
+			font-size: 17px;
+			line-height: 1.6;
+			text-align: left;
+		}
+		.image {
+			width: 50%; /* Left half for image */
+			display: flex;
+			justify-content: center;
+			align-items:start;
+			padding: 20px;
+		}
+		.image img {
+			max-width: 80%; /* Makes sure the image doesn’t overflow */
+			max-height: 90vh; /* Prevents the image from taking up the whole screen */
+			object-fit: contain;
+		}
+	</style>
+</head>
+<body>
+	<a href="/index.html">
+		<img src="/assets/branding/Logo/Logo-Transparent-TildaRose.png" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+    <script>
+        fetch('/navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+	<div id="social_media_middle"></div>
+
+
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<h3>Contact me for enquiries via my email <a href="mailto:tildaroseillustration@gmail.com">tildaroseillustration@gmail.com</a></h3>
+
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+	<a href="https://kuvittajat.fi/en/portfolios/tilda-rose-sladek/">
+		<img src="/assets/branding/Banners/Marks-4-Charcoal-Sketchbook-TildaRose.jpg" alt="Tilda Rose" class="title-gif">
+	</a>
+
+	<div id="social_media_bottom"></div>
+	<script>
+		fetch('/social_media.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('social_media_middle').innerHTML = data;
+				document.getElementById('social_media_bottom').innerHTML = data;
+			});
+	</script>
+
+	
+
+</body>
+</html>
