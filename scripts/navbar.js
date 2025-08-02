@@ -1,5 +1,5 @@
 async function loadNavbar() {
-	let request = await fetch('components/navbar.html');
+	let request = await fetch('../components/navbar.html');
 	let text = await request.text();
 	document.getElementById('navbar').innerHTML = text;
 
