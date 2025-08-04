@@ -11,7 +11,7 @@ function highlightActiveSection() {
 	const path = window.location.pathname;
 
 	const sectionMap = {
-		"https://ethan-berkowitz.github.io/tildaroseillustration.github.io/index.html": "featured",
+		"/tildaroseillustration.github.io/index.html": "featured",
 		"/": "featured",
 
 		// Work pages
@@ -34,7 +34,7 @@ function highlightActiveSection() {
 		"/projects/fiber_art_wave.html": "textile",
 
 		// About pages
-		"/about/bio.html": "about",
+		"/tildaroseillustration.github.io/about/bio.html": "about",
 		"/about/contact.html": "about"
 	};
 
