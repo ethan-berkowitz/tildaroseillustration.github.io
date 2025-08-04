@@ -47,6 +47,4 @@ function highlightActiveSection() {
 	}
 }
 
-
-
 loadNavbar();
