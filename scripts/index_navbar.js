@@ -8,12 +8,11 @@ async function loadNavbar() {
 }
 
 function highlightActiveSection() {
-	const path = window.location.pathname;
 
 	const sectionMap = {
 		"/tildaroseillustration.github.io/index.html": "featured",
 		"/tildaroseillustration.github.io/": "featured",
-
+		
 		// Textile pages
 		"/tildaroseillustration.github.io/textile/fiber_art.html": "textile",
 		"/tildaroseillustration.github.io/textile/patterns.html": "textile",
@@ -25,13 +24,13 @@ function highlightActiveSection() {
 		"/tildaroseillustration.github.io/projects/fiber_art_sunshine.html": "textile",
 		"/tildaroseillustration.github.io/projects/fiber_art_waterfall.html": "textile",
 		"/tildaroseillustration.github.io/projects/fiber_art_wave.html": "textile",
-
+		
 		// About pages
 		"/tildaroseillustration.github.io/about/bio.html": "about",
 		"/tildaroseillustration.github.io/about/contact.html": "about"
 	};
 
-	// Fallback to "work" if no match found
+	const path = window.location.pathname;
 	const currentSection = sectionMap[path] || "work";
 
 	const activeLink = document.querySelector(`[data-section="${currentSection}"]`);
