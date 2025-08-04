@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>nature - Tilda Rose</title>
-	<link rel="stylesheet" href="/styles/styles.css">
+	<link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style></style>
-	<script src="/scripts/navbar.js"></script>
+	<script src="../scripts/navbar.js"></script>
 </head>
 <body>
-	<a href="/index.html">
-		<img src="/assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	<a href="../index.html">
+		<img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
 	</a>
 	<div id="navbar"></div>
 
@@ -27,27 +27,27 @@
 
 	<script>
 		const images = [
-			{src: "/assets/nature/Coral-2-Charcoal-Sketch-Vignette-TildaRose.jpg",
+			{src: "../assets/nature/Coral-2-Charcoal-Sketch-Vignette-TildaRose.jpg",
 			description: "coral i"},
-			{src: "/assets/creatures/Pike-Vignette-Sea-Underwater-Fish-TildaRose.jpg",
+			{src: "../assets/creatures/Pike-Vignette-Sea-Underwater-Fish-TildaRose.jpg",
 			description: "sleepy pike"},
-			{src: "/assets/nature/Coral-1-Charcoal-Sketch-Vignette-TildaRose.jpg",
+			{src: "../assets/nature/Coral-1-Charcoal-Sketch-Vignette-TildaRose.jpg",
 			description: "coral ii"},
-			{src: "/assets/nature/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-2-TildaRose.jpg",
+			{src: "../assets/nature/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-2-TildaRose.jpg",
 			description: "finnish illustrators association"},
-			{src: "/assets/featured/Lapland-Finland-Travel-Snow-Winter-Poster-TildaRose.jpg",
+			{src: "../assets/featured/Lapland-Finland-Travel-Snow-Winter-Poster-TildaRose.jpg",
 			description: "come to lapland"},
-			{src: "/assets/client/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg",
+			{src: "../assets/client/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg",
 			description: "finnish union of health and social care"},
-			{src: "/assets/nature/Bologna-Terracotta-Roof-TildaRose.jpg",
+			{src: "../assets/nature/Bologna-Terracotta-Roof-TildaRose.jpg",
 			description: "bologna"},
-			{src: "/assets/featured/Moomin-Museum-Sketchbook-Residency-Cabin-TildaRose.jpg",
+			{src: "../assets/featured/Moomin-Museum-Sketchbook-Residency-Cabin-TildaRose.jpg",
 			description: "moomin musem x TILDA ROSE"},
-			{src: "/assets/featured/IpiPikku-ChildrensBook-Greenhouse-Night-Plants-Animals-Childrens-Book-Tilda-Rose.jpg",
+			{src: "../assets/featured/IpiPikku-ChildrensBook-Greenhouse-Night-Plants-Animals-Childrens-Book-Tilda-Rose.jpg",
 			description: "the mouse and the caterpillar"},
-			{src: "/assets/nature/Coral-3-Charcoal-Sketch-Vignette-TildaRose.jpg",
+			{src: "../assets/nature/Coral-3-Charcoal-Sketch-Vignette-TildaRose.jpg",
 			description: "coral iii"},
-			{src: "/assets/black_and_white/Flower-Sketch-Charcoal-TildaRose.jpg",
+			{src: "../assets/black_and_white/Flower-Sketch-Charcoal-TildaRose.jpg",
 			description: "botanical garden"}
 		];
 	</script>
@@ -110,7 +110,7 @@
 
 	<div id="social_media"></div>
 	<script>
-		fetch('/components/social_media.html')
+		fetch('../components/social_media.html')
 		.then(response => response.text())
 		.then(data => document.getElementById('social_media').innerHTML = data);
 	</script>

@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>client - Tilda Rose</title>
-	<link rel="stylesheet" href="/styles/styles.css">
+	<link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style></style>
-	<script src="/scripts/navbar.js"></script>
+	<script src="../scripts/navbar.js"></script>
 </head>
 <body>
-	<a href="/index.html">
-		<img src="/assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	<a href="../index.html">
+		<img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
 	</a>
 	<div id="navbar"></div>
 
@@ -27,23 +27,23 @@
 
 	<script>
 		const images = [
-			{src: "/assets/client/Tehy-Magazine-Menopause-3-TildaRose.jpg",
+			{src: "../assets/client/Tehy-Magazine-Menopause-3-TildaRose.jpg",
 			description: "the finnish union of health and social care"},
-			{src: "/assets/client/Tehy-Magazine-Menopause-2-TildaRose.jpg",
+			{src: "../assets/client/Tehy-Magazine-Menopause-2-TildaRose.jpg",
 			description: "the finnish union of health and social care"},
-			{src: "/assets/client/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-3-TildaRose.jpg"
+			{src: "../assets/client/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-3-TildaRose.jpg"
 			,link: "/projects/finnish_illustrators.html",
 			description: "the finnish illustrators association"},
-			{src: "/assets/client/Tehy-Magazine-Workplace-Aggression-1-TildaRose.jpg"
+			{src: "../assets/client/Tehy-Magazine-Workplace-Aggression-1-TildaRose.jpg"
 			,link: "/projects/finnish_union_tornado.html",
 			description: "the finnish union of health and social care"},
-			{src: "/assets/client/PoetryFoundation-Archaic-Objects-Article-Illustration-TildaRose.jpg"
+			{src: "../assets/client/PoetryFoundation-Archaic-Objects-Article-Illustration-TildaRose.jpg"
 			,link: "/projects/poetry_foundation.html",
 			description: "the poetry foundation"},
-			{src: "/assets/client/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg"
+			{src: "../assets/client/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg"
 			,link: "/projects/finnish_union_exhaustion.html",
 			description: "the finnish union of health and social care"},
-			{src: "/assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Article-Illustration-TildaRose.jpg"
+			{src: "../assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Article-Illustration-TildaRose.jpg"
 			,link: "/projects/finnish_psychological.html",
 			description: "the finnish psychological association"},
 			{src: ""
@@ -128,7 +128,7 @@
 
 	<div id="social_media"></div>
 	<script>
-		fetch('/components/social_media.html')
+		fetch('../components/social_media.html')
 		.then(response => response.text())
 		.then(data => document.getElementById('social_media').innerHTML = data);
 	</script>

@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>musicians - Tilda Rose</title>
-	<link rel="stylesheet" href="/styles/styles.css">
+	<link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style></style>
-	<script src="/scripts/navbar.js"></script>
+	<script src="../scripts/navbar.js"></script>
 </head>
 <body>
-	<a href="/index.html">
-		<img src="/assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	<a href="../index.html">
+		<img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
 	</a>
 	<div id="navbar"></div>
 
@@ -27,45 +27,45 @@
 	<h3>nick cave</h3>
 	<div class="spacer-lg" aria-hidden="true"></div>
 	<div class="moomin-item">
-		<img src="/assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg">
+		<img src="../assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg">
 	</div>
 
 	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 	<h3>Townes Van Zandt</h3>
 	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 	<div class="moomin-item">
-		<img src="/assets/people/Townes-VanZandt-Portrait-Gouache-Painting-TildaRose.jpg">
+		<img src="../assets/people/Townes-VanZandt-Portrait-Gouache-Painting-TildaRose.jpg">
 	</div>
 
 	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 	<h3>Billie Holiday</h3>
 	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 	<div class="moomin-item">
-		<img src="/assets/people/Billie-Holiday-Painting-Musician-Portrait-TildaRose.jpg">
+		<img src="../assets/people/Billie-Holiday-Painting-Musician-Portrait-TildaRose.jpg">
 	</div>
 
 	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 	<h3>The Rehearsal</h3>
 	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 	<div class="moomin-item">
-		<img src="/assets/people/Rehearsal-Performance-Music-Piano-Keyboard-Drums-TildaRose.jpg">
+		<img src="../assets/people/Rehearsal-Performance-Music-Piano-Keyboard-Drums-TildaRose.jpg">
 	</div>
 
 	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 	<h3>Justin Townes Earle</h3>
 	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 	<div class="moomin-item">
-		<img src="/assets/people/Justin-Townes-Earle-Portrait-TildaRose.jpg">
+		<img src="../assets/people/Justin-Townes-Earle-Portrait-TildaRose.jpg">
 	</div>
 
 
 	<script>
 		const images = [
-			{src: "/assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg"},
-			{src: "/assets/people/Townes-VanZandt-Portrait-Gouache-Painting-TildaRose.jpg"},
-			{src: "/assets/people/Billie-Holiday-Painting-Musician-Portrait-TildaRose.jpg"},
-			{src: "/assets/people/Rehearsal-Performance-Music-Piano-Keyboard-Drums-TildaRose.jpg"},
-			{src: "/assets/people/Justin-Townes-Earle-Portrait-TildaRose.jpg"}
+			{src: "../assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg"},
+			{src: "../assets/people/Townes-VanZandt-Portrait-Gouache-Painting-TildaRose.jpg"},
+			{src: "../assets/people/Billie-Holiday-Painting-Musician-Portrait-TildaRose.jpg"},
+			{src: "../assets/people/Rehearsal-Performance-Music-Piano-Keyboard-Drums-TildaRose.jpg"},
+			{src: "../assets/people/Justin-Townes-Earle-Portrait-TildaRose.jpg"}
 		];
 	</script>
 	
@@ -74,7 +74,7 @@
 
 	<div id="social_media"></div>
 	<script>
-		fetch('/components/social_media.html')
+		fetch('../components/social_media.html')
 		.then(response => response.text())
 		.then(data => document.getElementById('social_media').innerHTML = data);
 	</script>

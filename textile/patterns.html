@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>patterns - Tilda Rose</title>
-	<link rel="stylesheet" href="/styles/styles.css">
+	<link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style></style>
-	<script src="/scripts/navbar.js"></script>
+	<script src="../scripts/navbar.js"></script>
 </head>
 <body>
-	<a href="/index.html">
-		<img src="/assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	<a href="../index.html">
+		<img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
 	</a>
 	<div id="navbar"></div>
 
@@ -27,17 +27,17 @@
 
 	<script>
 		const images = [
-			{src: "/assets/pattern/SummerFloral-TildaRose.jpg",
+			{src: "../assets/pattern/SummerFloral-TildaRose.jpg",
 			description: "flower power"},
-			{src: "/assets/pattern/Cat-Pattern-TildaRose.jpg",
+			{src: "../assets/pattern/Cat-Pattern-TildaRose.jpg",
 			description: "cat in green"},
-			{src: "/assets/pattern/Fish-Pike-Green-1-TildaRose.jpg",
+			{src: "../assets/pattern/Fish-Pike-Green-1-TildaRose.jpg",
 			description: "happy pike"},
-			{src: "/assets/pattern/Sheep-Shapes-TildaRose.jpg",
+			{src: "../assets/pattern/Sheep-Shapes-TildaRose.jpg",
 			description: "counting sheep"},
-			{src: "/assets/pattern/Floral-Geometric-Red-Green-Yellow-TildaRose.jpg",
+			{src: "../assets/pattern/Floral-Geometric-Red-Green-Yellow-TildaRose.jpg",
 			description: "power flower"},
-			{src: "/assets/pattern/Abstract-Flower-Warm-2-TildaRose.jpg",
+			{src: "../assets/pattern/Abstract-Flower-Warm-2-TildaRose.jpg",
 			description: "abstract flower"}
 		];
 	</script>
@@ -100,7 +100,7 @@
 
 	<div id="social_media"></div>
 	<script>
-		fetch('/components/social_media.html')
+		fetch('../components/social_media.html')
 		.then(response => response.text())
 		.then(data => document.getElementById('social_media').innerHTML = data);
 	</script>

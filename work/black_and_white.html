@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>b&w - Tilda Rose</title>
-	<link rel="stylesheet" href="/styles/styles.css">
+	<link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style></style>
-	<script src="/scripts/navbar.js"></script>
+	<script src="../scripts/navbar.js"></script>
 </head>
 <body>
-	<a href="/index.html">
-		<img src="/assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	<a href="../index.html">
+		<img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
 	</a>
 	<div id="navbar"></div>
 
@@ -27,35 +27,35 @@
 
 	<script>
 		const images = [
-			{src: "/assets/black_and_white/Diver-Swimmer-Charcoal-Sketch-TildaRose.jpg",
+			{src: "../assets/black_and_white/Diver-Swimmer-Charcoal-Sketch-TildaRose.jpg",
 			description: "the diver"},
-			{src: "/assets/black_and_white/Flower-Sketch-Charcoal-TildaRose.jpg",
+			{src: "../assets/black_and_white/Flower-Sketch-Charcoal-TildaRose.jpg",
 			description: "botanical garden"},
-			{src: "/assets/black_and_white/Coral-3-Charcoal-Sketch-Vignette-TildaRose.jpg",
+			{src: "../assets/black_and_white/Coral-3-Charcoal-Sketch-Vignette-TildaRose.jpg",
 			description: "coral iii"},
-			{src: "/assets/black_and_white/Vase-Sketchbook-BlackAndWhite-Pencil-Drawing-TildaRose.jpg",
+			{src: "../assets/black_and_white/Vase-Sketchbook-BlackAndWhite-Pencil-Drawing-TildaRose.jpg",
 			description: "a vase"},
-			{src: "/assets/black_and_white/SelfPortrait-Death-Skeleton-Pencil-BlackAndWhite-TildaRose.jpg",
+			{src: "../assets/black_and_white/SelfPortrait-Death-Skeleton-Pencil-BlackAndWhite-TildaRose.jpg",
 			description: "self portrait"},
-			{src: "/assets/black_and_white/Toad-Charcoal-Sketch-BlackAndWhite-Amphibian-TildaRose.jpg",
+			{src: "../assets/black_and_white/Toad-Charcoal-Sketch-BlackAndWhite-Amphibian-TildaRose.jpg",
 			description: "toad"},
-			{src: "/assets/black_and_white/Dancer-Charcoal-Sketch-TildaRose.jpg",
+			{src: "../assets/black_and_white/Dancer-Charcoal-Sketch-TildaRose.jpg",
 			description: "the dancer"},
-			{src: "/assets/black_and_white/Marks-1-Charcoal-Sketchbook-TildaRose.jpg",
+			{src: "../assets/black_and_white/Marks-1-Charcoal-Sketchbook-TildaRose.jpg",
 			description: "marks i"},
-			{src: "/assets/black_and_white/Pattern-1-Abstract-Ink-TildaRose.jpg",
+			{src: "../assets/black_and_white/Pattern-1-Abstract-Ink-TildaRose.jpg",
 			description: "peace blossom"},
-			{src: "/assets/black_and_white/Pattern-2-Waves-Ink-TildaRose.jpg",
+			{src: "../assets/black_and_white/Pattern-2-Waves-Ink-TildaRose.jpg",
 			description: "fire and water"},
-			{src: "/assets/black_and_white/Pike-Charcoal-Sketch-Baltic-Sea-TildaRose.jpg",
+			{src: "../assets/black_and_white/Pike-Charcoal-Sketch-Baltic-Sea-TildaRose.jpg",
 			description: "pike study"},
-			{src: "/assets/black_and_white/CogDesign-Baroque-Concert-Sketch-2-TildaRose.jpg",
+			{src: "../assets/black_and_white/CogDesign-Baroque-Concert-Sketch-2-TildaRose.jpg",
 			description: "the singer"},
-			{src: "/assets/black_and_white/Coral-2-Charcoal-Sketch-Vignette-TildaRose.jpg",
+			{src: "../assets/black_and_white/Coral-2-Charcoal-Sketch-Vignette-TildaRose.jpg",
 			description: "coral ii"},
-			{src: "/assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg",
+			{src: "../assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg",
 			description: "nick cave"},
-			{src: "/assets/people/PLANSPONSOR-Sketch-3-Marble-Sculptor-TildaRose.jpg",
+			{src: "../assets/people/PLANSPONSOR-Sketch-3-Marble-Sculptor-TildaRose.jpg",
 			description: "the artist"}
 		];
 	</script>
@@ -118,7 +118,7 @@
 
 	<div id="social_media"></div>
 	<script>
-		fetch('/components/social_media.html')
+		fetch('../components/social_media.html')
 		.then(response => response.text())
 		.then(data => document.getElementById('social_media').innerHTML = data);
 	</script>
