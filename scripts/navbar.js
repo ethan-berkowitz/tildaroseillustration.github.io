@@ -11,7 +11,7 @@ function highlightActiveSection() {
 	const path = window.location.pathname;
 
 	const sectionMap = {
-		"/index.html": "featured",
+		"https://ethan-berkowitz.github.io/tildaroseillustration.github.io/index.html": "featured",
 		"/": "featured",
 
 		// Work pages
@@ -46,7 +46,5 @@ function highlightActiveSection() {
 		activeLink.classList.add("active");
 	}
 }
-
-
 
 loadNavbar();
