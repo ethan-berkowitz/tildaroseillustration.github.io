@@ -24,6 +24,13 @@ function highlightActiveSection() {
 		"/projects/fiber_art_sunshine.html": "textile",
 		"/projects/fiber_art_waterfall.html": "textile",
 		"/projects/fiber_art_wave.html": "textile",
+
+		// Work.html Pages
+		"/work/black_and_white.html": "work",
+		"/work/client.html": "work",
+		"/work/creatures.html": "work",
+		"/work/nature.html": "work",
+		"/work/people.html": "work",
 		
 		// About pages
 		"/about/bio.html": "about",
@@ -32,7 +39,7 @@ function highlightActiveSection() {
 
 	const path = window.location.pathname;
 	console.log("Path:", path);
-	const currentSection = sectionMap[path] || "work";
+	const currentSection = sectionMap[path] || "featured";
 	console.log("Matched section:", currentSection);
 
 	const activeLink = document.querySelector(`[data-section="${currentSection}"]`);
