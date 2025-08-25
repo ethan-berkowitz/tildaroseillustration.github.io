@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TEMPLATE - Tilda Rose</title>
+    <title>lonely pearl mussel - Tilda Rose</title>
 	<link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -16,25 +16,34 @@
 	</a>
 	<div id="navbar"></div>
 
+	<h4>
+		<a href="../work/creatures.html">creatures</a>
+	</h4>
 
-	<h1></h1>
-	<h3></h3>
+	<h1>the lonely pearl mussel</h1>
+	<h3>a personal work, "A Lonely Pearl Mussel" inspired by freshwater pearl mussels that have become very endangered in Finland. May be worn as a headdress or as a lampshade. made with recycled papers, paper mache, styrofoam and acrylic paint.</h3>
 	<div class="spacer-lg-after-text" aria-hidden="true"></div>
 
 	<script>
 		const images = [
-			{src: "/"}
+			{src: "../assets/featured-inside/A Lonely Pearl Mussel/1-Pearl-Mussel-Head-Sculpture-Photo-1-TildaRose.jpg"},
+			{src: "../assets/featured-inside/A Lonely Pearl Mussel/2-Pearl-Mussel-Head-Sculpture-Details-TildaRose.jpg"},
+			{src: "../assets/featured-inside/A Lonely Pearl Mussel/3-Pearl-Mussel-Head-Sculpture-PhotoShoot-TildaRose.jpg"},
+			{src: "../assets/featured-inside/A Lonely Pearl Mussel/4-Pearl-Mussel-Head-Sculpture-Animation-1-TildaRose.gif"},
+			{src: "../assets/featured-inside/A Lonely Pearl Mussel/5-Pearl-Mussel-Head-Sculpture-Photo-3-TildaRose.jpg"},
+			{src: "../assets/featured-inside/A Lonely Pearl Mussel/6-Pearl-Mussel-Head-Lamp.gif"},
+			{src: "../assets/featured-inside/A Lonely Pearl Mussel/7-Pearl-Mussel-Head-Sculpture-Photo-4-TildaRose.jpg"}
 		];
 	</script>
 	
-	<div class="gallery_textiles" id="gallery_textiles"></div>
+	<div class="gallery_project" id="gallery_project"></div>
 
 	<script>
-		const gallery = document.getElementById("gallery_textiles");
+		const gallery = document.getElementById("gallery_project");
 
 		images.forEach(item => {
 			const galleryItem = document.createElement("div");
-			galleryItem.className = "gallery-item-textiles";
+			galleryItem.className = "gallery-item-projects";
 
 			const link = document.createElement("a");
 

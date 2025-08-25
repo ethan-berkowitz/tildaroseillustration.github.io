@@ -165,7 +165,7 @@ h4 a:visited {
 .gallery_project {
 	columns: 1;
 	column-gap: 20px;
-	max-width: 40vw;
+	max-width: 70vw;
 }
 
 .gallery_textiles {
