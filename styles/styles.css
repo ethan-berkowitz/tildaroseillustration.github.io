@@ -22,6 +22,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-transform: lowercase;
 }
 
 h2 {
@@ -32,6 +33,8 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-transform: lowercase;
+
 }
 
 h3 {
@@ -45,6 +48,8 @@ h3 {
 	text-wrap: balance;
 	width: 800px;
 	text-align: center;
+	text-transform: lowercase;
+
 }
 
 /* Category Links */
@@ -61,6 +66,8 @@ h4 {
 	text-align: center;
 	color: green;
 	justify-content: center;
+	text-transform: lowercase;
+
 }
 
 h4 a {
@@ -198,6 +205,8 @@ h4 a:visited {
   
 .bio-item {
 	text-align: left;
+	text-transform: lowercase;
+
 }
   
 .bio-item img {
