@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A VERY BIG WAVE - Tilda Rose</title>
+	<link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+	<script src="../scripts/navbar.js"></script>
+</head>
+<body>
+	<a href="../index.html">
+		<img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+
+
+	<h1>a very big wave</h1>
+	<h3>A VERY BIG WAVE is a picture book idea about one's bad mood, another's love of collecting pebbles, and one very big wave that turns a warm summer day at the beach into an unforgettable adventure.</h3>
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+
+	<div class="single_project_item">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-1.jpg">
+	</div>
+
+	<div class="single_project_item_wide">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-2.jpg">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-3.jpg">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-4.jpg">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-5.jpg">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-6.jpg">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-7.jpg">
+	</div>
+
+	<div class="single_project_item">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-Ideation-1.jpg">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-Ideation-2.jpg">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-Ideation-3.jpg">
+		<img src="../assets/featured-inside/A Very Big Wave/AVeryBigWave-Ideation-4.jpg">
+	</div>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('../components/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
+</body>
+</html>

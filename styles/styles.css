@@ -235,8 +235,15 @@ h4 a:visited {
 	display: block;    /* Allows margin auto to work */
 	margin: 0 auto;    /* Centers the image horizontally */
 }
+
 .single_project_item img {
 	width: 60%;        /* Image takes 60% of its container width */
+	display: block;    /* Allows margin auto to work */
+	margin: 0 auto 2rem auto;
+}
+
+.single_project_item_wide img {
+	width: 100%;        /* Image takes 60% of its container width */
 	display: block;    /* Allows margin auto to work */
 	margin: 0 auto 2rem auto;
 }
