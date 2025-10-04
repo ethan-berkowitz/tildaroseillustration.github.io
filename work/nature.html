@@ -4,140 +4,107 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>nature - tilda rose</title>
-	<link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style></style>
-	<script src="../scripts/navbar.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="../assets/logos/Logo-Initials-TildaRose.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">    
+    <script src="../scripts/navbar.js"></script>
 </head>
 <body>
-	<a href="../index.html">
-		<img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
-	</a>
-	<div id="navbar"></div>
+    <a href="../index.html">
+        <img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+    </a>
 
-	<h1>nature</h1>
-	<div class="spacer-lg" aria-hidden="true"></div>
+    <div id="navbar"></div>
 
-	<!-- The Modal -->
-	<div id="myModal" class="modal">
-		<span class="close">&times;</span>
-		<img class="modal-content" alt="">
-	</div>
-
+    <h1>nature</h1>
+    <div class="spacer-lg" aria-hidden="true"></div>
+    
 	<script>
 		const images = [
-			{src: "../assets/nature/Coral-2-Charcoal-Sketch-Vignette-TildaRose.jpg",
-			description: "coral i"},
-			{src: "../assets/creatures/Pike-Vignette-Sea-Underwater-Fish-TildaRose.jpg",
-			description: "sleepy pike"},
-			{src: "../assets/nature/Coral-1-Charcoal-Sketch-Vignette-TildaRose.jpg",
-			description: "coral ii"},
-			{src: "../assets/nature/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-2-TildaRose.jpg",
-			description: "finnish illustrators association"},
-			{src: "../assets/featured/Lapland-Finland-Travel-Snow-Winter-Poster-TildaRose.jpg",
-			description: "come to lapland"},
-			{src: "../assets/client/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg",
-			description: "finnish union of health and social care"},
-			{src: "../assets/nature/Bologna-Terracotta-Roof-TildaRose.jpg",
-			description: "bologna"},
-			{src: "../assets/nature/Moomin-Museum-Sketchbook-Residency-Cabin-TildaRose.jpg",
-			description: "moomin musem x tilda rose"},
-			{src: "../assets/featured/IpiPikku-ChildrensBook-Greenhouse-Night-Plants-Animals-Childrens-Book-Tilda-Rose.jpg",
-			description: "the mouse and the caterpillar"},
-			{src: "../assets/nature/Coral-3-Charcoal-Sketch-Vignette-TildaRose.jpg",
-			description: "coral iii"},
-			{src: "../assets/featured/Charcoal-Flower-Sketch-Charcoal-Framed-TildaRose.jpg",
-			description: "dead flowers"},
-			{src: "../assets/nature/Lola-Cave-Landscape-ChildrensBook-TildaRose.jpg",
-			description: "shark-toothed cave"},
-			{src: "../assets/nature/Moomin-Museum-Sketchbook-Residency-Backyard-TildaRose.jpg",
-			description: "moomin museum x tilda rose"},
-			{src: "../assets/nature/PoetryFoundation-Archaic-Objects-Article-Illustration-TildaRose.jpg",
-			description: "poetry foundation"},
-			{src: "../assets/black_and_white/Rapture-TildaRose-Linocut-Print.jpg",
-			description: "rapture"},
-			{src: "../assets/client/Pentagram-LMU-Magazine-Editorial-Wave-TildaRose.jpg",
-			description: "pentagram | dueling waves"},
-			{src: "../assets/client/PLANADVISER-Cave-Boat-Treasure-TildaRose.jpg",
-			description: "planadviser | cave"},
-			{src: "../assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Spot-Illustration-TildaRose.jpg",
-			description: "the finnish psychological association"},
-			{src: "../assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Article-Illustration-TildaRose.jpg",
-			description: "the finnish psychological association"},
-			{src: "../assets/creatures/Very-Big-Wave-Mice-2-TildaRose.jpg",
-			description: "a very big wave | concept i"},
-			{src: "../assets/creatures/Very-Big-Wave-Mice-TildaRose.jpg",
-			description: "a very big wave | concept ii"},
-			{src: "../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-1.jpg",
-			description: "a very big wave"},
-			{src: "../assets/featured/Lola-Whistling-Valley-Map-TildaRose.jpg",
-			description: "whistling valley"},
+			{src: "../assets/nature/Coral-2-Charcoal-Sketch-Vignette-TildaRose.jpg", description: "coral i"},
+			{src: "../assets/creatures/Pike-Vignette-Sea-Underwater-Fish-TildaRose.jpg", description: "sleepy pike"},
+			{src: "../assets/nature/Coral-1-Charcoal-Sketch-Vignette-TildaRose.jpg", description: "coral ii"},
+			{src: "../assets/nature/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-2-TildaRose.jpg", description: "finnish illustrators association"},
+			{src: "../assets/featured/Lapland-Finland-Travel-Snow-Winter-Poster-TildaRose.jpg", description: "come to lapland"},
+			{src: "../assets/client/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg", description: "finnish union of health and social care"},
+			{src: "../assets/nature/Bologna-Terracotta-Roof-TildaRose.jpg", description: "bologna"},
+			{src: "../assets/nature/Moomin-Museum-Sketchbook-Residency-Cabin-TildaRose.jpg", description: "moomin musem x tilda rose"},
+			{src: "../assets/featured/IpiPikku-ChildrensBook-Greenhouse-Night-Plants-Animals-Childrens-Book-Tilda-Rose.jpg", description: "the mouse and the caterpillar"},
+			{src: "../assets/nature/Coral-3-Charcoal-Sketch-Vignette-TildaRose.jpg", description: "coral iii"},
+			{src: "../assets/featured/Charcoal-Flower-Sketch-Charcoal-Framed-TildaRose.jpg", description: "dead flowers"},
+			{src: "../assets/nature/Lola-Cave-Landscape-ChildrensBook-TildaRose.jpg", description: "shark-toothed cave"},
+			{src: "../assets/nature/Moomin-Museum-Sketchbook-Residency-Backyard-TildaRose.jpg", description: "moomin museum x tilda rose"},
+			{src: "../assets/nature/PoetryFoundation-Archaic-Objects-Article-Illustration-TildaRose.jpg", description: "poetry foundation"},
+			{src: "../assets/black_and_white/Rapture-TildaRose-Linocut-Print.jpg", description: "rapture"},
+			{src: "../assets/client/Pentagram-LMU-Magazine-Editorial-Wave-TildaRose.jpg", description: "pentagram | dueling waves"},
+			{src: "../assets/client/PLANADVISER-Cave-Boat-Treasure-TildaRose.jpg", description: "planadviser | cave"},
+			{src: "../assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Spot-Illustration-TildaRose.jpg", description: "the finnish psychological association"},
+			{src: "../assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Article-Illustration-TildaRose.jpg", description: "the finnish psychological association"},
+			{src: "../assets/creatures/Very-Big-Wave-Mice-2-TildaRose.jpg", description: "a very big wave | concept i"},
+			{src: "../assets/creatures/Very-Big-Wave-Mice-TildaRose.jpg", description: "a very big wave | concept ii"},
+			{src: "../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-1.jpg", description: "a very big wave"},
+			{src: "../assets/featured/Lola-Whistling-Valley-Map-TildaRose.jpg", description: "whistling valley"},
 		];
 	</script>
 	
 
-	<div class="gallery" id="gallery"></div>
+    <div class="masonry">
+        <div class="column" id="col1"></div>
+        <div class="column" id="col2"></div>
+        <div class="column" id="col3"></div>
+    </div>
 
-	<script>
-		const modal = document.getElementById("myModal");
-		const modalImg = modal.querySelector("img");
-		const closeBtn = modal.querySelector(".close");
+    <script>
+        const columns = [
+            document.getElementById("col1"),
+            document.getElementById("col2"),
+            document.getElementById("col3")
+        ];
 
-		const gallery = document.getElementById("gallery");
+        // Example distribution: round robin (0 → col1, 1 → col2, 2 → col3, repeat)
+        images.forEach((item, i) => {
+            const galleryItem = document.createElement("div");
+            galleryItem.className = "gallery-item";
 
-		// Loop through each image
-		images.forEach(item => {
-			const galleryItem = document.createElement("div");
-			galleryItem.className = "gallery-item";
+            const img = document.createElement("img");
+            img.src = item.src;
+            img.alt = item.description || "";
 
-			const img = document.createElement("img");
-			img.src = item.src;
-			img.alt = item.description || "";
+            const desc = document.createElement("div");
+            desc.className = "description";
+            desc.textContent = item.description;
 
-			const desc = document.createElement("div");
-			desc.className = "description";
-			desc.textContent = item.description;
+            if (item.link) {
+                const link = document.createElement("a");
+                link.href = item.link;
+                link.appendChild(img);
+                galleryItem.appendChild(link);
+            } else {
+                galleryItem.appendChild(img);
+            }
 
-			// Handle link behavior
-			if (item.link) {
-				const link = document.createElement("a");
-				link.href = item.link;
-				link.appendChild(img);
-				galleryItem.appendChild(link);
-			} 
-			// Handle modal behavior
-			else {
-				img.style.cursor = "pointer";
-				img.addEventListener("click", () => {
-					modal.style.display = "block";
-					modalImg.src = item.src;
-					modalImg.alt = item.description || "";
-				});
-				galleryItem.appendChild(img);
-			}
+            galleryItem.appendChild(desc);
 
-			galleryItem.appendChild(desc);
-			gallery.appendChild(galleryItem);
-		});
+            // Place in one of the columns
+            const colIndex = i % 3; // change logic if you want custom placement
+            columns[colIndex].appendChild(galleryItem);
+        });
+    </script>
 
-		// Close modal on X or click outside
-		closeBtn.onclick = () => {
-			modal.style.display = "none";
-		};
-		window.onclick = (e) => {
-			if (e.target == modal) {
-				modal.style.display = "none";
-			}
-		};
-	</script>
+    <iframe width="700" height="400"
+        class="youtube-embed"
+        src="https://www.youtube.com/embed/r4tYm9AXzmI"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
 
-	<div id="social_media"></div>
-	<script>
-		fetch('../components/social_media.html')
-		.then(response => response.text())
-		.then(data => document.getElementById('social_media').innerHTML = data);
-	</script>
+    <div id="social_media"></div>
+    <script>
+        fetch('components/index_social_media.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('social_media').innerHTML = data);
+    </script>
 
 </body>
 </html>
