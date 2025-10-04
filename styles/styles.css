@@ -235,6 +235,18 @@ h4 a:visited {
 	transition: opacity 0.3s ease;
 }
 
+.masonry {
+	display: flex;
+	gap: 20px;
+}
+
+.column {
+	flex: 1; /* equal width columns */
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
 .moomin-item img {
 	width: 80%;        /* Image takes 60% of its container width */
 	display: block;    /* Allows margin auto to work */

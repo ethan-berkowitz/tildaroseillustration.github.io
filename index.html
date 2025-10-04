@@ -4,167 +4,114 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>tilda rose</title>
-	<link rel="stylesheet" href="styles/styles.css">
-	<link rel="icon" href="assets/logos/Logo-Initials-TildaRose.png" type="image/png">
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100;400;500;600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">	
-    <style></style>
-	<script src="scripts/index_navbar.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="assets/logos/Logo-Initials-TildaRose.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">    
+    <script src="scripts/index_navbar.js"></script>
 </head>
 <body>
-	<a href="index.html">
-		<img src="assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
-	</a>
+    <a href="index.html">
+        <img src="assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+    </a>
 
-	<div id="navbar"></div>
+    <div id="navbar"></div>
 
-	<h1>featured</h1>
-	<div class="spacer-lg" aria-hidden="true"></div>
-	
-	<script>
-		const images = [
-			{src: "assets/featured/CatNap-Animation-Gouache-Small-TildaRose.gif",
-			description: "howdy! animation", link: "projects/howdy_animation.html"},
-			
-			{src: "assets/featured/IpiPikku-ChildrensBook-Greenhouse-Night-Plants-Animals-Childrens-Book-Tilda-Rose.jpg",
-			description: "the mouse and the caterpillar", link: "projects/mouse_and_caterpillar.html"},
-			
-			{src: "assets/fiber_art/Flounder/Flounder-1-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg",
-			description: "flounder", link: "projects/fiber_art_flounder.html"},
-			
-			{src: "assets/featured/DickKet-SelfPortrait-ArtHistory-Painting-TildaRose.jpg",
-			description: "dick ket's self-portrait", link: "projects/dick_ket.html"},
-			
-			{src: "assets/featured/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg",
-			description: "finnish union of health and social care", link: "projects/finnish_union_exhaustion.html"},
-			
-			{src: "assets/people/Croquis-Poster-LiveDrawing-TildaRose.jpg",
-			description: "a croquis evening | event poster", link: "projects/croquis_evening_poster.html"},	
+    <h1>featured</h1>
+    <div class="spacer-lg" aria-hidden="true"></div>
+    
+    <script>
+        const images = [
+			{src: "assets/featured/IpiPikku-ChildrensBook-Greenhouse-Night-Plants-Animals-Childrens-Book-Tilda-Rose.jpg", description: "the mouse and the caterpillar", link: "projects/mouse_and_caterpillar.html"},
+            {src: "assets/featured/CatNap-Animation-Gouache-Small-TildaRose.gif", description: "howdy! animation", link: "projects/howdy_animation.html"},
+            {src: "assets/featured/Snake-Painting-Character-Monster-TildaRose.jpg", description: "devil turned into a snake", link: "projects/snake.html"},
+            {src: "assets/featured/Charcoal-Flower-Sketch-Charcoal-Framed-TildaRose.jpg", description: "charcoal works", link: "projects/charcoal_works.html"},
+            {src: "assets/featured/Self-Portrait-Pose-Figure-Woman-TildaRose.jpg", description: "pose I", link: "projects/pose.html"},
+            {src: "assets/people/Croquis-Poster-LiveDrawing-TildaRose.jpg", description: "a croquis evening | event poster", link: "projects/croquis_evening_poster.html"},
+            {src: "assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-1.jpg", description: "a very big wave", link: "projects/a_very_big_wave.html"},
+            {src: "assets/fiber_art/daphne in felt/Felt-Daphne-10-TildaRose.jpg", description: "felted daphne", link: "projects/fiber_art_felted_daphne.html"},
+            {src: "assets/featured/Lapland-Finland-Travel-Snow-Winter-Poster-TildaRose.jpg", description: "lapland poster", link: "projects/lapland_poster.html"},
+            {src: "assets/featured/Pearl-Mussel-Head-Sculpture-Photo-2-TildaRose.jpg", description: "the lonely pearl mussel", link: "projects/lonely_pearl_mussel.html"},
+            {src: "assets/featured/DickKet-SelfPortrait-ArtHistory-Painting-TildaRose.jpg", description: "dick ket's self-portrait", link: "projects/dick_ket.html"},
+            {src: "assets/client/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-2-TildaRose.jpg", description: "finnish illustrators association", link: "projects/finnish_illustrators.html"},
+            {src: "assets/fiber_art/Flounder/Flounder-1-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg", description: "flounder", link: "projects/fiber_art_flounder.html"},
+            {src: "assets/featured/ManAndCat-Painting-Illustration-Sepia-TildaRose.jpg", description: "the encounter", link: "projects/the_encounter.html"},
+            {src: "assets/featured/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg", description: "finnish union of health and social care", link: "projects/finnish_union_exhaustion.html"},
+            {src: "assets/featured/Unrest-Pattern-Ink-Drawing-TildaRose.jpg", description: "unrest", link: "projects/unrest.html"},
+            {src: "assets/featured/Daphne-Cat-Animation-Gouache-1-Medium-TildaRose.gif", description: "daphne! animation", link: "projects/daphne_animation.html"},
+            {src: "assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg", description: "musicians", link: "projects/musicians.html"},
+            {src: "assets/featured/Tehy-Magazine-Workplace-Aggression-1-TildaRose.jpg", description: "finnish union of health and social care", link: "projects/finnish_union_tornado.html"},
+            {src: "assets/featured/Beasts-Charcoal-Drawing-Sketchbook-TildaRose.jpg", description: "charcoal works", link: "projects/charcoal_works.html"},
+            {src: "assets/featured/Rowboat-Animation-TildaRose.gif", description: "animations", link: "projects/animations.html"},
+            {src: "assets/black_and_white/Dancer-Charcoal-Sketch-TildaRose.jpg", description: "charcoal works", link: "projects/charcoal_works.html"},
+            {src: "assets/featured/Moomin-Museum-Sketchbook-Residency-Cabin-Night-TildaRose.jpg", description: "Moomin Museum x TILDA ROSE", link: "projects/moomin_museum.html"},
+            {src: "assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Article-Illustration-TildaRose.jpg", description: "finnish psychological association", link: "projects/finnish_psychological.html"},
+            {src: "assets/pattern/SummerFloral-TildaRose.jpg", description: "patterns", link: "textile/patterns.html"},
+            {src: "assets/featured/PurpleDragon-Sculpture-2-TildaRose.jpg", description: "the magic dragon", link: "projects/the_magic_dragon.html"},
+            {src: "assets/client/Tehy-Magazine-Menopause-1-TildaRose.jpg", description: "finnish union of health and social care", link: "projects/finnish_union_menopause.html"},
+            {src: "assets/featured/Lola-Whistling-Valley-Map-TildaRose.jpg", description: "the map of whistling valley", link: "projects/lola.html"},
+            {src: "assets/people/Hands-Watercolor-Study-Portrait-TildaRose.jpg", description: "study of hands", link: "projects/study_of_hands.html"},
+            {src: "assets/client/PoetryFoundation-Archaic-Objects-Article-Illustration-TildaRose.jpg", description: "the poetry foundation collection", link: "projects/poetry_foundation.html"},
+            {src: "assets/featured/SelfPortrait-Death-Skeleton-Wall-TildaRose.jpg", description: "the devil", link: "projects/the_devil.html"}
+        ];
+    </script>
 
-			{src: "assets/featured/Unrest-Pattern-Ink-Drawing-TildaRose.jpg",
-			description: "unrest", link: "projects/unrest.html"},	
-		
-			{src: "assets/featured/Daphne-Cat-Animation-Gouache-1-Medium-TildaRose.gif",
-			description: "daphne! animation", link: "projects/daphne_animation.html"},
-			
-			{src: "assets/featured/Tehy-Magazine-Workplace-Aggression-1-TildaRose.jpg",
-			description: "finnish union of health and social care", link: "projects/finnish_union_tornado.html"},
-			
-			{src: "assets/featured/ManAndCat-Painting-Illustration-Sepia-TildaRose.jpg",
-			description: "the encounter", link: "projects/the_encounter.html"},
-			
-			{src: "assets/featured/Self-Portrait-Pose-Figure-Woman-TildaRose.jpg",
-			description: "pose I", link: "projects/pose.html"},
+    <div class="masonry">
+        <div class="column" id="col1"></div>
+        <div class="column" id="col2"></div>
+        <div class="column" id="col3"></div>
+    </div>
 
-			{src: "assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-1.jpg",
-			description: "a very big wave", link: "projects/a_very_big_wave.html"},
-			
-			{src: "assets/featured/Rowboat-Animation-TildaRose.gif",
-			description: "animations", link: "projects/animations.html"},
-			
-			{src: "assets/featured/Lapland-Finland-Travel-Snow-Winter-Poster-TildaRose.jpg",
-			description: "lapland poster", link: "projects/lapland_poster.html"},
-			
-			{src: "assets/black_and_white/Dancer-Charcoal-Sketch-TildaRose.jpg",
-			description: "charcoal works", link: "projects/charcoal_works.html"},
-			
-			{src: "assets/featured/Moomin-Museum-Sketchbook-Residency-Cabin-Night-TildaRose.jpg",
-			description: "Moomin Museum x TILDA ROSE", link: "projects/moomin_museum.html"},
-			
-			{src: "assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Article-Illustration-TildaRose.jpg",
-			description: "finnish psychological association", link: "projects/finnish_psychological.html"},
-			
-			{src: "assets/client/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-2-TildaRose.jpg",
-			description: "finnish illustrators association", link: "projects/finnish_illustrators.html"},
+    <script>
+        const columns = [
+            document.getElementById("col1"),
+            document.getElementById("col2"),
+            document.getElementById("col3")
+        ];
 
-			{src: "../assets/fiber_art/daphne in felt/Felt-Daphne-10-TildaRose.jpg",
-			description: "felted daphne", link: "projects/fiber_art_felted_daphne.html"},
+        // Example distribution: round robin (0 → col1, 1 → col2, 2 → col3, repeat)
+        images.forEach((item, i) => {
+            const galleryItem = document.createElement("div");
+            galleryItem.className = "gallery-item";
 
-			{src: "assets/pattern/SummerFloral-TildaRose.jpg",
-			description: "patterns", link: "textile/patterns.html"},
-			
-			{src: "assets/featured/Beasts-Charcoal-Drawing-Sketchbook-TildaRose.jpg",
-			description: "charcoal works", link: "projects/charcoal_works.html"},
-			
-			{src: "assets/featured/Snake-Painting-Character-Monster-TildaRose.jpg",
-			description: "devil turned into a snake", link: "projects/snake.html"},
-			
-			{src: "assets/featured/PurpleDragon-Sculpture-2-TildaRose.jpg",
-			description: "the magic dragon", link: "projects/the_magic_dragon.html"},
-		
-			{src: "assets/featured/Charcoal-Flower-Sketch-Charcoal-Framed-TildaRose.jpg",
-			description: "charcoal works", link: "projects/charcoal_works.html"},
-			
-			{src: "assets/client/Tehy-Magazine-Menopause-1-TildaRose.jpg",
-			description: "finnish union of health and social care", link: "projects/finnish_union_menopause.html"},
-			
-			{src: "assets/people/NickCave-Portrait-Sketchbook-Musician-Performer-Ink-TildaRose.jpg",
-			description: "musicians", link: "projects/musicians.html"},
-			
-			{src: "assets/featured/Lola-Whistling-Valley-Map-TildaRose.jpg",
-			description: "the map of whistling valley", link: "projects/lola.html"},
-			
-			{src: "assets/people/Hands-Watercolor-Study-Portrait-TildaRose.jpg",
-			description: "study of hands", link: "projects/study_of_hands.html"},
-			
-			{src: "assets/client/PoetryFoundation-Archaic-Objects-Article-Illustration-TildaRose.jpg",
-			description: "the poetry foundation collection", link: "projects/poetry_foundation.html"},
+            const img = document.createElement("img");
+            img.src = item.src;
+            img.alt = item.description || "";
 
-			{src: "assets/featured/Pearl-Mussel-Head-Sculpture-Photo-2-TildaRose.jpg",
-			description: "the lonely pearl mussel", link: "projects/lonely_pearl_mussel.html"},
+            const desc = document.createElement("div");
+            desc.className = "description";
+            desc.textContent = item.description;
 
-			{src: "assets/featured/SelfPortrait-Death-Skeleton-Wall-TildaRose.jpg",
-			description: "the devil", link: "projects/the_devil.html"},
+            if (item.link) {
+                const link = document.createElement("a");
+                link.href = item.link;
+                link.appendChild(img);
+                galleryItem.appendChild(link);
+            } else {
+                galleryItem.appendChild(img);
+            }
 
+            galleryItem.appendChild(desc);
 
-		];
-	</script>
-	
+            // Place in one of the columns
+            const colIndex = i % 3; // change logic if you want custom placement
+            columns[colIndex].appendChild(galleryItem);
+        });
+    </script>
 
-	<div class="gallery" id="gallery"></div>
+    <iframe width="700" height="400"
+        class="youtube-embed"
+        src="https://www.youtube.com/embed/r4tYm9AXzmI"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
 
-	<script>
-		const gallery = document.getElementById("gallery");
-
-		// Loop through each image
-		images.forEach(item => {
-			const galleryItem = document.createElement("div");
-			galleryItem.className = "gallery-item";
-
-			const img = document.createElement("img");
-			img.src = item.src;
-			img.alt = item.description || "";
-
-			const desc = document.createElement("div");
-			desc.className = "description";
-			desc.textContent = item.description;
-
-			// Handle link behavior
-			if (item.link) {
-				const link = document.createElement("a");
-				link.href = item.link;
-				link.appendChild(img);
-				galleryItem.appendChild(link);
-			}
-
-			galleryItem.appendChild(desc);
-			gallery.appendChild(galleryItem);
-		});
-	</script>
-
-	<iframe width="700" height="400"
-		class="youtube-embed"
-		src="https://www.youtube.com/embed/r4tYm9AXzmI"
-		frameborder="0"
-		allowfullscreen>
-	</iframe>
-
-	<div id="social_media"></div>
-	<script>
-		fetch('components/index_social_media.html')
-		.then(response => response.text())
-		.then(data => document.getElementById('social_media').innerHTML = data);
-	</script>
+    <div id="social_media"></div>
+    <script>
+        fetch('components/index_social_media.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('social_media').innerHTML = data);
+    </script>
 
 </body>
 </html>
