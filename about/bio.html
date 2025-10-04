@@ -116,5 +116,27 @@
 		.then(data => document.getElementById('social_media').innerHTML = data);
 	</script>
 
+	<script>
+		const soundMap = {
+		//"Miuku-OG-Muse.jpg": "../assets/sounds/miuku.mp3",
+		"Squeeky-Muse.jpg": "../assets/sounds/squeeky.mp3",
+		"Bonky-Muse.jpg": "../assets/sounds/bonky.mp3",
+		"Arya-Muse.jpg": "../assets/sounds/arya.mp3",
+		"Daphne-Muse.jpg": "../assets/sounds/daphne.mp3"
+		};
+	
+		document.querySelectorAll(".gallery_assistants img").forEach(img => {
+		img.addEventListener("click", () => {
+			const filename = img.src.split("/").pop(); // just the file name
+			if (soundMap[filename]) {
+			const audio = new Audio(soundMap[filename]);
+			audio.volume = 0.1; // 30% of max volume
+			audio.play();
+			}
+		});
+		});
+	</script>
+  
+
 </body>
 </html>

@@ -190,6 +190,11 @@ h4 a:visited {
   margin: 0 auto;
 }
 
+.gallery_assistants img:active {
+	transform: scale(0.95);
+	transition: transform 0.1s;
+}
+
 .bio {
 	columns: 2;
 	column-gap: 20px;
