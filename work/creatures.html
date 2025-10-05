@@ -22,41 +22,33 @@
     
 	<script>
 		const images = [
-			{src: "../assets/creatures/Turtle-Painting-Framed-TildaRose.jpg", description: "the turtle"},
-			{src: "../assets/creatures/Arya-Cat-BlackAndWhite-Drawing-Sketchbook-TildaRose.jpg", description: "arya"},
-			{src: "../assets/creatures/IpiAndPikku-Greenhouse-Plants-Animals-Childrens-Book-TildaRose.jpg", description: "the mouse and the caterpillar i"},
 			{src: "../assets/pattern/Fish-Pike-Green-1-TildaRose.jpg", description: "northern european pike"},
-			{src: "../assets/pattern/Cat-Pattern-TildaRose.jpg", description: "strut!"},
+			{src: "../assets/creatures/Turtle-Painting-Framed-TildaRose.jpg", description: "the turtle"},
 			{src: "../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-1.jpg", description: "a very big wave i"},
-			{src: "../assets/creatures/Crocodile-Vignette-Ink-Wash-TildaRose.jpg", description: "alligator"},
-			{src: "../assets/fiber_art/Alligator/Alligator-PunchNeedle-Cover-TildaRose.jpg", description: "alligator stuffie"},
-			{src: "../assets/creatures/BigCatch-Swamp-ChildrensBook-TildaRose.jpg", description: "a big catch"},
-			{src: "../assets/creatures/Hound-Dog-Sketch-Pencil-Sketchbook-TildaRose.jpg", description: "the hound"},
+			{src: "../assets/creatures/Arya-Cat-BlackAndWhite-Drawing-Sketchbook-TildaRose.jpg", description: "arya"},
+			{src: "../assets/creatures/AVeryBigWave-PictureBook-TildaRose-2.jpg", description: "a very big wave"},
 			{src: "../assets/creatures/IpiAndPikku-Greenhouse-Night-Plants-Animals-Childrens-Book-TildaRose.jpg", description: "the mouse and the caterpillar ii"},
 			{src: "../assets/featured/Snake-Painting-Character-Monster-TildaRose.jpg", description: "the devil turned into a snake"},
+			{src: "../assets/featured/PurpleDragon-Sculpture-2-TildaRose.jpg", description: "the magic dragon"},
+			{src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-1.jpg", description: "a very big wave | sketch"},
+			{src: "../assets/creatures/Very-Big-Wave-Mice-TildaRose.jpg", description: "a very big wave | concept ii"},
+			{src: "../assets/creatures/IpiAndPikku-Greenhouse-Plants-Animals-Childrens-Book-TildaRose.jpg", description: "the mouse and the caterpillar i"},
+			{src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-2.jpg", description: "a very big wave | sketch"},
+			{src: "../assets/nature/Moomin-Museum-Sketchbook-Residency-Backyard-TildaRose.jpg", description: "moomin museum x tilda rose"},
+			{src: "../assets/black_and_white/Beasts-Charcoal-Drawing-Sketchbook-TildaRose.jpg", description: "beasts"},
+			{src: "../assets/fiber_art/Flounder/Flounder-1-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg", description: "flounder stuffie"},
+			{src: "../assets/creatures/Daphne-Cat-Animation-Gouache-1-Medium-TildaRose.gif", description: "daphne"},
+			{src: "../assets/featured-inside/A Lonely Pearl Mussel/4-Pearl-Mussel-Head-Sculpture-Animation-1-TildaRose.gif", description: "the lonely pearl mussel"},
+			{src: "../assets/creatures/Pike-Vignette-Sea-Underwater-Fish-TildaRose.jpg", description: "sleepy pike"},
+			{src: "../assets/creatures/Space-Dragon-Vintage-TildaRose.jpg", description: "Space Dragon"},
+			{src: "../assets/creatures/AVeryBigWave-PictureBook-TildaRose-4_1.jpg", description: "a very big wave iv"},
+			{src: "../assets/fiber_art/daphne in felt/Felt-Daphne-10-TildaRose.jpg", description: "felted daphne"},
+			{src: "../assets/black_and_white/Toad-Charcoal-Sketch-BlackAndWhite-Amphibian-TildaRose.jpg", description: "toad"},
 			{src: "../assets/creatures/Very-Big-Wave-Mice-2-TildaRose.jpg", description: "a very big wave | concept i"},
 			{src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-3.jpg.jpg", description: "a very big wave | sketch"},
-			{src: "../assets/featured/Pearl-Mussel-Head-Sculpture-Photo-2-TildaRose.jpg", description: "the lonely pearl mussel"},
-			{src: "../assets/black_and_white/Toad-Charcoal-Sketch-BlackAndWhite-Amphibian-TildaRose.jpg", description: "toad"},
-			{src: "../assets/fiber_art/Flounder/Flounder-1-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg", description: "flounder stuffie"},
-			{src: "../assets/nature/Moomin-Museum-Sketchbook-Residency-Backyard-TildaRose.jpg", description: "moomin museum x tilda rose"},
-			{src: "../assets/creatures/Daphne-Cat-Animation-Gouache-1-Medium-TildaRose.gif", description: "daphne"},
-			{src: "../assets/creatures/AVeryBigWave-PictureBook-TildaRose-4_1.jpg", description: "a very big wave iv"},
-			{src: "../assets/featured-inside/Animations/Pacing-TildaRose-Sketch.gif", description: "the pacer"},
-			{src: "../assets/nature/Bologna-Terracotta-Roof-TildaRose.jpg", description: "bologna"},
-			{src: "../assets/creatures/Bugland-Sketchbook-Doodle-TildaRose.jpg", description: "welcome to bug town"},
-			{src: "../assets/creatures/Pike-Vignette-Sea-Underwater-Fish-TildaRose.jpg", description: "sleepy pike"},
-			{src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-1.jpg", description: "a very big wave | sketch"},
-			{src: "../assets/fiber_art/daphne in felt/Felt-Daphne-10-TildaRose.jpg", description: "felted daphne"},
-			{src: "../assets/creatures/Very-Big-Wave-Mice-TildaRose.jpg", description: "a very big wave | concept ii"},
-			{src: "../assets/black_and_white/Pike-Charcoal-Sketch-Baltic-Sea-TildaRose.jpg", description: "pike"},
 			{src: "../assets/creatures/Field-Mouse-Cactus-TildaRose.jpg", description: "field mouse"},
-			{src: "../assets/black_and_white/Beasts-Charcoal-Drawing-Sketchbook-TildaRose.jpg", description: "beasts"},
-			{src: "../assets/creatures/Space-Dragon-Vintage-TildaRose.jpg", description: "Space Dragon"},
-			{src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-2.jpg", description: "a very big wave | sketch"},
-			{src: "../assets/creatures/AVeryBigWave-PictureBook-TildaRose-3_1.jpg", description: "a very big wave iii"},
-			{src: "../assets/featured/PurpleDragon-Sculpture-2-TildaRose.jpg", description: "the magic dragon"},
-			{src: "../assets/featured-inside/A Lonely Pearl Mussel/4-Pearl-Mussel-Head-Sculpture-Animation-1-TildaRose.gif", description: "the lonely pearl mussel"},
+			{src: "../assets/creatures/Crocodile-Vignette-Ink-Wash-TildaRose.jpg", description: "alligator"},
+			{src: "../assets/fiber_art/Alligator/Alligator-PunchNeedle-Cover-TildaRose.jpg", description: "alligator stuffie"},
 		];
 	</script>
 	
@@ -103,13 +95,6 @@
             columns[colIndex].appendChild(galleryItem);
         });
     </script>
-
-    <iframe width="700" height="400"
-        class="youtube-embed"
-        src="https://www.youtube.com/embed/r4tYm9AXzmI"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
 
     <div id="social_media"></div>
     <script>
