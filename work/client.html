@@ -19,31 +19,36 @@
 
     <h1>client</h1>
     <div class="spacer-lg" aria-hidden="true"></div>
-    
-	<script>
-		const images = [
-			{src: "../assets/client/Finnish-Union-Of-Health-And-Social-Care-Seasonal-Depression-1-TildaRose.jpg", description: "finnish union of health and social care", link: "../projects/client_finnish_union_seasonal_depression.html"},
-			{src: "../assets/featured/Moomin-Museum-Sketchbook-Residency-Cabin-Backyard-TildaRose.jpg", description: "moomin  museum", link: "../projects/moomin_museum.html"},
-			{src: "../assets/client/Tehy-Magazine-Menopause-3-TildaRose.jpg", description: "the finnish union of health and social care", link: "../projects/finnish_union_menopause.html"},
-			{src: "../assets/client/WSOY-Young-Adult-Novel-BookCover-Illustration-Medium-Square-TildaRose.gif", description: "wsoy", link: "../projects/client_wsoy.html"},
-			{src: "../assets/client/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-2-TildaRose.jpg", description: "the finnish illustrators association", link: "../projects/finnish_illustrators.html"},
-			{src: "../assets/client/Cog-CuluturalCalendar-Baroque-Concert-TildaRose.jpg", description: "cog design", link: "../projects/client_cog_design.html"},
-			{src: "../assets/client/Tehy-Magazine-Workplace-Aggression-1-TildaRose.jpg", description: "the finnish union of health and social care", link: "../projects/finnish_union_tornado.html"},
-			{src: "../assets/client/Eater-Holiday-Kringle-TildaRose.jpg", description: "eater.com", link: "../projects/client_eater.html"},
-			{src: "../assets/client/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg", description: "the finnish union of health and social care", link: "../projects/finnish_union_exhaustion.html"},
-			{src: "../assets/client/PoetryFoundation-Archaic-Objects-Article-Illustration-TildaRose.jpg", description: "the poetry foundation", link: "../projects/poetry_foundation.html"},
-			{src: "../assets/client/PLANADVISER-Shapes-1-TildaRose.jpg", description: "planadviser collection", link: "../projects/client_planadviser_collection.html"},
-			{src: "../assets/client/PLANSPONSOR-Measurements-Fall-Editorial-TildaRose.jpg", description: "plansponsor collection", link: "../projects/client_plansponsor_collection.html"},
-			{src: "../assets/client/MorningBrew-Teamwork-TildaRose.jpg", description: "morning brew", link: "../projects/client_morningbrew.html"},
-			{src: "../assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Article-Illustration-TildaRose.jpg", description: "the finnish psychological association", link: "../projects/finnish_psychological.html"},
-			{src: "../assets/client/UC-Merced-Client-Project-Campus-Seasons-TildaRose.gif", description: "uc merced", link: "../projects/client_ucmerced.html"},
-			{src: "../assets/client/Pentagram-LMU-Magazine-Editorial-Wave-TildaRose.jpg", description: "pentagram", link: "../projects/client_pentagram.html"},
-			{src: "../assets/client/WSJ-Dating-Apps-TildaRose.jpg", description: "wall street journal", link: "../projects/client_wsj.html"},
-			{src: "../assets/client/Read-With-Audrey-Tove-Jansson-Summer-Book-TildaRose.jpg", description: "listen with audrey", link: "../projects/client_audrey.html"},
-		];
-	</script>
-	
 
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" alt="">
+    </div>
+
+    <script>
+        const images = [
+            {src: "../assets/client/Finnish-Union-Of-Health-And-Social-Care-Seasonal-Depression-1-TildaRose.jpg", description: "finnish union of health and social care", link: "../projects/client_finnish_union_seasonal_depression.html"},
+            {src: "../assets/featured/Moomin-Museum-Sketchbook-Residency-Cabin-Backyard-TildaRose.jpg", description: "moomin museum", link: "../projects/moomin_museum.html"},
+            {src: "../assets/client/Tehy-Magazine-Menopause-3-TildaRose.jpg", description: "the finnish union of health and social care", link: "../projects/finnish_union_menopause.html"},
+            {src: "../assets/client/WSOY-Young-Adult-Novel-BookCover-Illustration-Medium-Square-TildaRose.gif", description: "wsoy", link: "../projects/client_wsoy.html"},
+            {src: "../assets/client/Illustrators-Assocation-Finland-Kuvittajat-Magazine-Residency-MoominMuseum-2-TildaRose.jpg", description: "the finnish illustrators association", link: "../projects/finnish_illustrators.html"},
+            {src: "../assets/client/Cog-CuluturalCalendar-Baroque-Concert-TildaRose.jpg", description: "cog design", link: "../projects/client_cog_design.html"},
+            {src: "../assets/client/Tehy-Magazine-Workplace-Aggression-1-TildaRose.jpg", description: "the finnish union of health and social care", link: "../projects/finnish_union_tornado.html"},
+            {src: "../assets/client/Eater-Holiday-Kringle-TildaRose.jpg", description: "eater.com", link: "../projects/client_eater.html"},
+            {src: "../assets/client/Tehy-Magazine-Work-Exhaustion-1-TildaRose.jpg", description: "the finnish union of health and social care", link: "../projects/finnish_union_exhaustion.html"},
+            {src: "../assets/client/PoetryFoundation-Archaic-Objects-Article-Illustration-TildaRose.jpg", description: "the poetry foundation", link: "../projects/poetry_foundation.html"},
+            {src: "../assets/client/PLANADVISER-Shapes-1-TildaRose.jpg", description: "planadviser collection", link: "../projects/client_planadviser_collection.html"},
+            {src: "../assets/client/PLANSPONSOR-Measurements-Fall-Editorial-TildaRose.jpg", description: "plansponsor collection", link: "../projects/client_plansponsor_collection.html"},
+            {src: "../assets/client/MorningBrew-Teamwork-TildaRose.jpg", description: "morning brew", link: "../projects/client_morningbrew.html"},
+            {src: "../assets/client/Psykologi-Magazine-Finnish-Psychological-Association-Article-Illustration-TildaRose.jpg", description: "the finnish psychological association", link: "../projects/finnish_psychological.html"},
+            {src: "../assets/client/UC-Merced-Client-Project-Campus-Seasons-TildaRose.gif", description: "uc merced", link: "../projects/client_ucmerced.html"},
+            {src: "../assets/client/Pentagram-LMU-Magazine-Editorial-Wave-TildaRose.jpg", description: "pentagram", link: "../projects/client_pentagram.html"},
+            {src: "../assets/client/WSJ-Dating-Apps-TildaRose.jpg", description: "wall street journal", link: "../projects/client_wsj.html"},
+            {src: "../assets/client/Read-With-Audrey-Tove-Jansson-Summer-Book-TildaRose.jpg", description: "listen with audrey", link: "../projects/client_audrey.html"},
+        ];
+    </script>
+    
     <div class="masonry">
         <div class="column" id="col1"></div>
         <div class="column" id="col2"></div>
@@ -51,13 +56,16 @@
     </div>
 
     <script>
+        const modal = document.getElementById("myModal");
+        const modalImg = modal.querySelector("img");
+        const closeBtn = modal.querySelector(".close");
+
         const columns = [
             document.getElementById("col1"),
             document.getElementById("col2"),
             document.getElementById("col3")
         ];
 
-        // Example distribution: round robin (0 → col1, 1 → col2, 2 → col3, repeat)
         images.forEach((item, i) => {
             const galleryItem = document.createElement("div");
             galleryItem.className = "gallery-item";
@@ -70,21 +78,36 @@
             desc.className = "description";
             desc.textContent = item.description;
 
+            // If it has a link → wrap in <a> (no modal)
             if (item.link) {
                 const link = document.createElement("a");
                 link.href = item.link;
                 link.appendChild(img);
                 galleryItem.appendChild(link);
-            } else {
+            } 
+            // Otherwise → open modal on click
+            else {
+                img.style.cursor = "pointer";
+                img.addEventListener("click", () => {
+                    modal.style.display = "block";
+                    modalImg.src = item.src;
+                    modalImg.alt = item.description || "";
+                });
                 galleryItem.appendChild(img);
             }
 
             galleryItem.appendChild(desc);
 
-            // Place in one of the columns
-            const colIndex = i % 3; // change logic if you want custom placement
+            // Distribute across columns
+            const colIndex = i % 3;
             columns[colIndex].appendChild(galleryItem);
         });
+
+        // Close modal on X or click outside
+        closeBtn.onclick = () => modal.style.display = "none";
+        window.onclick = (e) => {
+            if (e.target == modal) modal.style.display = "none";
+        };
     </script>
 
     <iframe width="700" height="400"
@@ -100,6 +123,5 @@
         .then(response => response.text())
         .then(data => document.getElementById('social_media').innerHTML = data);
     </script>
-
 </body>
 </html>

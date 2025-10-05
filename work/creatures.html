@@ -20,38 +20,43 @@
     <h1>creatures</h1>
     <div class="spacer-lg" aria-hidden="true"></div>
     
-	<script>
-		const images = [
-			{src: "../assets/pattern/Fish-Pike-Green-1-TildaRose.jpg", description: "northern european pike"},
-			{src: "../assets/creatures/Turtle-Painting-Framed-TildaRose.jpg", description: "the turtle"},
-			{src: "../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-1.jpg", description: "a very big wave i"},
-			{src: "../assets/creatures/Arya-Cat-BlackAndWhite-Drawing-Sketchbook-TildaRose.jpg", description: "arya"},
-			{src: "../assets/creatures/AVeryBigWave-PictureBook-TildaRose-2.jpg", description: "a very big wave"},
-			{src: "../assets/creatures/IpiAndPikku-Greenhouse-Night-Plants-Animals-Childrens-Book-TildaRose.jpg", description: "the mouse and the caterpillar ii"},
-			{src: "../assets/featured/Snake-Painting-Character-Monster-TildaRose.jpg", description: "the devil turned into a snake"},
-			{src: "../assets/featured/PurpleDragon-Sculpture-2-TildaRose.jpg", description: "the magic dragon"},
-			{src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-1.jpg", description: "a very big wave | sketch"},
-			{src: "../assets/creatures/Very-Big-Wave-Mice-TildaRose.jpg", description: "a very big wave | concept ii"},
-			{src: "../assets/creatures/IpiAndPikku-Greenhouse-Plants-Animals-Childrens-Book-TildaRose.jpg", description: "the mouse and the caterpillar i"},
-			{src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-2.jpg", description: "a very big wave | sketch"},
-			{src: "../assets/nature/Moomin-Museum-Sketchbook-Residency-Backyard-TildaRose.jpg", description: "moomin museum x tilda rose"},
-			{src: "../assets/black_and_white/Beasts-Charcoal-Drawing-Sketchbook-TildaRose.jpg", description: "beasts"},
-			{src: "../assets/fiber_art/Flounder/Flounder-Cover-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg", description: "flounder stuffie"},
-			{src: "../assets/creatures/Daphne-Cat-Animation-Gouache-1-Medium-TildaRose.gif", description: "daphne"},
-			{src: "../assets/featured-inside/A Lonely Pearl Mussel/4-Pearl-Mussel-Head-Sculpture-Animation-1-TildaRose.gif", description: "the lonely pearl mussel"},
-			{src: "../assets/creatures/Pike-Vignette-Sea-Underwater-Fish-TildaRose.jpg", description: "sleepy pike"},
-			{src: "../assets/creatures/Space-Dragon-Vintage-TildaRose.jpg", description: "Space Dragon"},
-			{src: "../assets/creatures/AVeryBigWave-PictureBook-TildaRose-4_1.jpg", description: "a very big wave iv"},
-			{src: "../assets/fiber_art/daphne in felt/Felt-Daphne-10-TildaRose.jpg", description: "felted daphne"},
-			{src: "../assets/black_and_white/Toad-Charcoal-Sketch-BlackAndWhite-Amphibian-TildaRose.jpg", description: "toad"},
-			{src: "../assets/creatures/Very-Big-Wave-Mice-2-TildaRose.jpg", description: "a very big wave | concept i"},
-			{src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-3.jpg.jpg", description: "a very big wave | sketch"},
-			{src: "../assets/creatures/Field-Mouse-Cactus-TildaRose.jpg", description: "field mouse"},
-			{src: "../assets/creatures/Crocodile-Vignette-Ink-Wash-TildaRose.jpg", description: "alligator"},
-			{src: "../assets/fiber_art/Alligator/Alligator-PunchNeedle-Cover-TildaRose.jpg", description: "alligator stuffie"},
-		];
-	</script>
-	
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" alt="">
+    </div>
+
+    <script>
+        const images = [
+            {src: "../assets/pattern/Fish-Pike-Green-1-TildaRose.jpg", description: "northern european pike"},
+            {src: "../assets/creatures/Turtle-Painting-Framed-TildaRose.jpg", description: "the turtle"},
+            {src: "../assets/featured-inside/A Very Big Wave/AVeryBigWave-PictureBook-TildaRose-1.jpg", description: "a very big wave i"},
+            {src: "../assets/creatures/Arya-Cat-BlackAndWhite-Drawing-Sketchbook-TildaRose.jpg", description: "arya"},
+            {src: "../assets/creatures/AVeryBigWave-PictureBook-TildaRose-2.jpg", description: "a very big wave"},
+            {src: "../assets/creatures/IpiAndPikku-Greenhouse-Night-Plants-Animals-Childrens-Book-TildaRose.jpg", description: "the mouse and the caterpillar ii"},
+            {src: "../assets/featured/Snake-Painting-Character-Monster-TildaRose.jpg", description: "the devil turned into a snake"},
+            {src: "../assets/featured/PurpleDragon-Sculpture-2-TildaRose.jpg", description: "the magic dragon"},
+            {src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-1.jpg", description: "a very big wave | sketch"},
+            {src: "../assets/creatures/Very-Big-Wave-Mice-TildaRose.jpg", description: "a very big wave | concept ii"},
+            {src: "../assets/creatures/IpiAndPikku-Greenhouse-Plants-Animals-Childrens-Book-TildaRose.jpg", description: "the mouse and the caterpillar i"},
+            {src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-2.jpg", description: "a very big wave | sketch"},
+            {src: "../assets/nature/Moomin-Museum-Sketchbook-Residency-Backyard-TildaRose.jpg", description: "moomin museum x tilda rose"},
+            {src: "../assets/black_and_white/Beasts-Charcoal-Drawing-Sketchbook-TildaRose.jpg", description: "beasts"},
+            {src: "../assets/fiber_art/Flounder/Flounder-Cover-Punch-Needle-Textile-Yarn-WallHanging-TildaRose.jpg", description: "flounder stuffie"},
+            {src: "../assets/creatures/Daphne-Cat-Animation-Gouache-1-Medium-TildaRose.gif", description: "daphne"},
+            {src: "../assets/featured-inside/A Lonely Pearl Mussel/4-Pearl-Mussel-Head-Sculpture-Animation-1-TildaRose.gif", description: "the lonely pearl mussel"},
+            {src: "../assets/creatures/Pike-Vignette-Sea-Underwater-Fish-TildaRose.jpg", description: "sleepy pike"},
+            {src: "../assets/creatures/Space-Dragon-Vintage-TildaRose.jpg", description: "Space Dragon"},
+            {src: "../assets/creatures/AVeryBigWave-PictureBook-TildaRose-4_1.jpg", description: "a very big wave iv"},
+            {src: "../assets/fiber_art/daphne in felt/Felt-Daphne-10-TildaRose.jpg", description: "felted daphne"},
+            {src: "../assets/black_and_white/Toad-Charcoal-Sketch-BlackAndWhite-Amphibian-TildaRose.jpg", description: "toad"},
+            {src: "../assets/creatures/Very-Big-Wave-Mice-2-TildaRose.jpg", description: "a very big wave | concept i"},
+            {src: "../assets/creatures/AVeryBigWave-PictureBook-Sketch-3.jpg.jpg", description: "a very big wave | sketch"},
+            {src: "../assets/creatures/Field-Mouse-Cactus-TildaRose.jpg", description: "field mouse"},
+            {src: "../assets/creatures/Crocodile-Vignette-Ink-Wash-TildaRose.jpg", description: "alligator"},
+            {src: "../assets/fiber_art/Alligator/Alligator-PunchNeedle-Cover-TildaRose.jpg", description: "alligator stuffie"},
+        ];
+    </script>
 
     <div class="masonry">
         <div class="column" id="col1"></div>
@@ -60,13 +65,16 @@
     </div>
 
     <script>
+        const modal = document.getElementById("myModal");
+        const modalImg = modal.querySelector("img");
+        const closeBtn = modal.querySelector(".close");
+
         const columns = [
             document.getElementById("col1"),
             document.getElementById("col2"),
             document.getElementById("col3")
         ];
 
-        // Example distribution: round robin (0 → col1, 1 → col2, 2 → col3, repeat)
         images.forEach((item, i) => {
             const galleryItem = document.createElement("div");
             galleryItem.className = "gallery-item";
@@ -79,21 +87,36 @@
             desc.className = "description";
             desc.textContent = item.description;
 
+            // If it has a link → wrap in <a> (no modal)
             if (item.link) {
                 const link = document.createElement("a");
                 link.href = item.link;
                 link.appendChild(img);
                 galleryItem.appendChild(link);
-            } else {
+            } 
+            // Otherwise → open modal on click
+            else {
+                img.style.cursor = "pointer";
+                img.addEventListener("click", () => {
+                    modal.style.display = "block";
+                    modalImg.src = item.src;
+                    modalImg.alt = item.description || "";
+                });
                 galleryItem.appendChild(img);
             }
 
             galleryItem.appendChild(desc);
 
-            // Place in one of the columns
-            const colIndex = i % 3; // change logic if you want custom placement
+            // Distribute across columns
+            const colIndex = i % 3;
             columns[colIndex].appendChild(galleryItem);
         });
+
+        // Close modal on X or click outside
+        closeBtn.onclick = () => modal.style.display = "none";
+        window.onclick = (e) => {
+            if (e.target == modal) modal.style.display = "none";
+        };
     </script>
 
     <div id="social_media"></div>
@@ -102,6 +125,5 @@
         .then(response => response.text())
         .then(data => document.getElementById('social_media').innerHTML = data);
     </script>
-
 </body>
 </html>
