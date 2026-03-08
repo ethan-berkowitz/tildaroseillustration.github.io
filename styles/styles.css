@@ -145,7 +145,7 @@ h4 a:visited {
 }
 
 .gallery {
-	columns: 3; /* Creates 3 independent columns */
+	columns: 2; /* Creates 2 independent columns */
 	column-gap: 20px;
 	max-width: 92vw;
 }
@@ -169,15 +169,15 @@ h4 a:visited {
 }
 
 .gallery_textiles {
-	columns: 2;
+	columns: 1;
 	column-gap: 20px;
 	max-width: 100vw;
 }
 
 .gallery_assistants {
-  columns: 5;
+  columns: 3;
   column-gap: 20px;
-  max-width: 120vw;
+  max-width: 65vw;
 }
 
 .assistant-item {
@@ -196,9 +196,9 @@ h4 a:visited {
 }
 
 .bio {
-	columns: 2;
+	columns: 1;
 	column-gap: 20px;
-	max-width: 100vw;
+	max-width: 65vw;
 }
   
 .bio-item {
@@ -212,7 +212,7 @@ h4 a:visited {
 }
 
 .caption {
-	text-align: center;
+	text-align: left;
 	margin-top: 8px;
 }
 

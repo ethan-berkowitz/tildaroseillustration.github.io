@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>waterfall weaving - tilda rose</title>
+	<link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+	<script src="../scripts/navbar.js"></script>
+</head>
+<body>
+	<a href="../index.html">
+		<img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+
+	<h4>
+		<a href="../textile/fiber_art.html">fiber art</a>
+	</h4>
+
+	<h1>cave weaving</h1>
+	<h3>Made with recycled textiles and scrap yarns. 55 x 76 cm. available for purchase.</h3>
+	<div class="spacer-lg-after-text" aria-hidden="true"></div>
+
+	<script>
+		const images = [
+			{src: "../assets/fiber_art/Cave/Cave-Weaving-TildaRose-086.jpg"},
+			{src: "../assets/fiber_art/Cave/Cave-Weaving-TildaRose-101.jpg"},
+			{src: "../assets/fiber_art/Cave/Cave-Weaving-TildaRose-058.jpg"},
+			{src: "../assets/fiber_art/Cave/Cave-Weaving-TildaRose-093.jpg"},
+			{src: "../assets/fiber_art/Cave/Cave-Weaving-TildaRose-080.jpg"},
+			{src: "../assets/fiber_art/Cave/Cave-Weaving-TildaRose-088.jpg"},
+			{src: "../assets/fiber_art/Cave/Cave-Weaving-TildaRose-099.jpg"},
+		];
+	</script>
+	
+
+	<div class="gallery_textiles" id="gallery_textiles"></div>
+
+	<script>
+		const gallery = document.getElementById("gallery_textiles");
+
+		images.forEach(item => {
+			const galleryItem = document.createElement("div");
+			galleryItem.className = "gallery-item-textiles";
+
+			const link = document.createElement("a");
+
+			const img = document.createElement("img");
+			img.src = item.src;
+			img.alt = item.description || "";
+
+			link.appendChild(img); // wrap image in <a>
+
+			const desc = document.createElement("div");
+			desc.className = "description";
+			desc.textContent = item.description;
+
+			galleryItem.appendChild(link); // append <a> instead of img directly
+			galleryItem.appendChild(desc);
+
+			gallery.appendChild(galleryItem);
+		});
+	</script>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('../components/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
+</body>
+</html>
