@@ -350,7 +350,15 @@ h4 a:visited {
 		margin: 0 auto;
 		height: 80px;
 	}
-	
+
+	.masonry {
+		flex-direction: column;
+	}
+
+	.column {
+		width: 100%;
+	}
+
 	body {
 		font-family: 'Manrope', sans-serif;
 		margin: 0;
