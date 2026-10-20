@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>stick collection - tilda rose</title>
+	<link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+	<script src="../scripts/navbar.js"></script>
+</head>
+<body>
+	<a href="../index.html">
+		<img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+
+	<h4>
+		<a href="../work/nature.html">nature</a>
+		<span class="plus">+</span>
+		<a href="../work/poeple.html">people</a>
+		<span class="plus">+</span>
+		<a href="../work/client.html">client</a>
+		<span class="plus">+</span>
+		<a href="../work/creatures.html">creatures</a>
+	</h4>
+
+	<h1>vignettes</h1>
+	<div class="spacer-lg" aria-hidden="true"></div>
+	<h3>and other small illustrations and animations</h3>
+	<div class="spacer-lg" aria-hidden="true"></div>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" alt="">
+	</div>
+
+	<script>
+		const images = [
+			{src: "../assets/featured/HelpingHand-TildaRose-Vignettes-5.jpg", description: "private commission"},
+			{src: "../assets/client-inside/Tehy-Magazine-Workplace-Aggression-3-TildaRose.jpg", description: "finnish union of health and social care", link: "../projects/finnish_union_tornado.html"},	
+			{src: "../assets/animations/Illustrator-Artist-Animation-TildaRose.gif"},
+			{src: "../assets/featured-inside/HelpingHand-TildaRose-Vignette-1.jpg", description: "private commission"},
+			{src: "../assets/featured-inside/HelpingHand-TildaRose-Vignette-2.jpg", description: "private commission"},
+			{src: "../assets/client/Finnish-Union-Of-Health-And-Social-Care-Seasonal-Depression-2-TildaRose.jpg", description: "finnish union of health and social care", link: "../projects/client_finnish_union_seasonal_depression.html"},
+			{src: "../assets/client-inside/Psykologi-Magazine-Finnish-Psychological-Association-Spot-Illustration-TildaRose.jpg", description: "the finnish psychological association", link: "../projects/finnish_psychological.html"},
+			{src: "../assets/featured-inside/HelpingHand-TildaRose-Vignettes-3.jpg", description: "private commission"},
+			{src: "../assets/featured-inside/HalloweenDogSkeleton-TildaRose-Single.jpg"},
+			{src: "../assets/featured-inside/Stick Collection/Stick-9.jpg", description: "the world wide association of sticks", link: "../projects/stick_collection.html"},
+			{src: "../assets/animations/Rowboat-Animation-TildaRose-Transparent.gif"},
+			{src: "../assets/featured-inside/HelpingHand-TildaRose-Vignettes-4.jpg", description: "private commission"},
+			{src: "../assets/client/FinnishUnionHealthSocialCare-Spectrum-Women-TildaRose.jpg", description: "finnish union of health and social care", link: "../projects/client_finnish_union_spectrum.html"},
+			{src: "../assets/animations/Pacing-TildaRose-Sketch-2.gif"}
+		];
+	</script>
+	
+
+	<div class="gallery" id="gallery"></div>
+
+	<script>
+		const modal = document.getElementById("myModal");
+		const modalImg = modal.querySelector("img");
+		const closeBtn = modal.querySelector(".close");
+
+		const gallery = document.getElementById("gallery");
+
+		// Loop through each image
+		images.forEach(item => {
+			const galleryItem = document.createElement("div");
+			galleryItem.className = "gallery-item";
+
+			const img = document.createElement("img");
+			img.src = item.src;
+			img.alt = item.description || "";
+
+			const desc = document.createElement("div");
+			desc.className = "description";
+			desc.textContent = item.description;
+
+			// Handle link behavior
+			if (item.link) {
+				const link = document.createElement("a");
+				link.href = item.link;
+				link.appendChild(img);
+				galleryItem.appendChild(link);
+			} 
+			// Handle modal behavior
+			else {
+				img.style.cursor = "pointer";
+				img.addEventListener("click", () => {
+					modal.style.display = "block";
+					modalImg.src = item.src;
+					modalImg.alt = item.description || "";
+				});
+				galleryItem.appendChild(img);
+			}
+
+			galleryItem.appendChild(desc);
+			gallery.appendChild(galleryItem);
+		});
+
+		// Close modal on X or click outside
+		closeBtn.onclick = () => {
+			modal.style.display = "none";
+		};
+		window.onclick = (e) => {
+			if (e.target == modal) {
+				modal.style.display = "none";
+			}
+		};
+	</script>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('../components/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
+</body>
+</html>
