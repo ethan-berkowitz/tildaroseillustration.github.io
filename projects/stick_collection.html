@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>stick collection - tilda rose</title>
+	<link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style></style>
+	<script src="../scripts/navbar.js"></script>
+</head>
+<body>
+	<a href="../index.html">
+		<img src="../assets/branding/Logo/Logo-Animation-TildaRose.gif" alt="Tilda Rose" class="title-gif">
+	</a>
+	<div id="navbar"></div>
+
+	<h4>
+		<a href="../work/nature.html">nature</a>
+	</h4>
+
+	<h1>DO NOT TOUCH</h1>
+    <h1>...my stick collection</h1>
+	<div class="spacer-lg" aria-hidden="true"></div>
+	<h3>a private and cherished collection of sticks. </h3>
+	<div class="spacer-lg" aria-hidden="true"></div>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" alt="">
+	</div>
+
+	<script>
+		const images = [
+			{src: "../assets/featured-inside/Stick Collection/Stick-1.jpg", description: "sam"},
+			{src: "../assets/featured-inside/Stick Collection/Stick-2.jpg", description: "lilith"},
+			{src: "../assets/featured-inside/Stick Collection/Stick-3.jpg", description: "coach"},	
+			{src: "../assets/featured-inside/Stick Collection/Stick-5.jpg", description: "cliff"},
+			{src: "../assets/featured-inside/Stick Collection/Stick-4.jpg", description: "frasier"},
+			{src: "../assets/featured-inside/Stick Collection/Stick-7.jpg", description: "woody"},
+			{src: "../assets/featured-inside/Stick Collection/Stick-6.jpg", description: "phil"},
+			{src: "../assets/featured-inside/Stick Collection/Stick-10.jpg", description: "diane"},
+			{src: "../assets/featured-inside/Stick Collection/Stick-8.jpg", description: "rebecca"},
+			{src: "../assets/featured-inside/Stick Collection/Stick-9.jpg", description: "norman"},
+		];
+	</script>
+	
+
+	<div class="gallery" id="gallery"></div>
+
+	<script>
+		const modal = document.getElementById("myModal");
+		const modalImg = modal.querySelector("img");
+		const closeBtn = modal.querySelector(".close");
+
+		const gallery = document.getElementById("gallery");
+
+		// Loop through each image
+		images.forEach(item => {
+			const galleryItem = document.createElement("div");
+			galleryItem.className = "gallery-item";
+
+			const img = document.createElement("img");
+			img.src = item.src;
+			img.alt = item.description || "";
+
+			const desc = document.createElement("div");
+			desc.className = "description";
+			desc.textContent = item.description;
+
+			// Handle link behavior
+			if (item.link) {
+				const link = document.createElement("a");
+				link.href = item.link;
+				link.appendChild(img);
+				galleryItem.appendChild(link);
+			} 
+			// Handle modal behavior
+			else {
+				img.style.cursor = "pointer";
+				img.addEventListener("click", () => {
+					modal.style.display = "block";
+					modalImg.src = item.src;
+					modalImg.alt = item.description || "";
+				});
+				galleryItem.appendChild(img);
+			}
+
+			galleryItem.appendChild(desc);
+			gallery.appendChild(galleryItem);
+		});
+
+		// Close modal on X or click outside
+		closeBtn.onclick = () => {
+			modal.style.display = "none";
+		};
+		window.onclick = (e) => {
+			if (e.target == modal) {
+				modal.style.display = "none";
+			}
+		};
+	</script>
+
+	<div id="social_media"></div>
+	<script>
+		fetch('../components/social_media.html')
+		.then(response => response.text())
+		.then(data => document.getElementById('social_media').innerHTML = data);
+	</script>
+
+</body>
+</html>

@@ -145,7 +145,7 @@ h4 a:visited {
 }
 
 .gallery {
-	columns: 2; /* Creates 2 independent columns */
+	columns: 3; /* Creates 3 independent columns */
 	column-gap: 20px;
 	max-width: 92vw;
 }
